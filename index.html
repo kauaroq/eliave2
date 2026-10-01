@@ -1,1325 +1,2379 @@
 <!DOCTYPE html>
-<html lang="es">
-<head> 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Arte de Esculpir el Rostro | Método Coreano de Yoga Facial</title>
-<meta name="description" content="Método comprobado inspirado en los secretos coreanos para levantar, tonificar y esculpir tu rostro con solo 10 minutos diarios.">
-<link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.0.0/index.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/index.min.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        cream: '#FDFBF7',
-        rose: '#E8B4B8',
-        roseDeep: '#B85450',
-        roseSoft: '#F5D5D0',
-        gold: '#C9A961',
-        goldLight: '#D4AF37',
-        dark: '#2D2424',
-        warm: '#F7EDE2',
-      },
-      fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['Inter', 'sans-serif'],
-      },
-      boxShadow: {
-        'soft': '0 10px 40px -10px rgba(184, 84, 80, 0.15)',
-        'glow': '0 0 40px rgba(201, 169, 97, 0.3)',
-      }
-    }
-  }
-}
-</script>
-<style>
-* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; background: #FDFBF7; color: #2D2424; overflow-x: hidden; }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Ritual — Bring the Artisan Café Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --espresso: #19110a;
+            --dark: #241509;
+            --medium: #402511;
+            --caramel: #c58d5f;
+            --gold: #d3a355;
+            --gold-soft: rgba(211, 163, 85, 0.14);
+            --cream: #f7f1e8;
+            --latte: #fbf8f3;
+            --white: #ffffff;
+            --green: #3f7a52;
+            --green-soft: rgba(63, 122, 82, 0.12);
+            --red: #b23a2f;
+            --text: #23170d;
+            --muted: #6d5847;
+            --muted-2: #8f7d6d;
+            --line: rgba(197, 141, 95, 0.18);
+            --shadow: 0 18px 60px rgba(25, 17, 10, 0.08);
+            --radius-xl: 32px;
+            --radius-lg: 24px;
+            --radius-md: 18px;
+        }
 
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(184, 84, 80, 0.4); } 50% { box-shadow: 0 0 0 15px rgba(184, 84, 80, 0); } }
-@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-@keyframes countPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.animate-on-scroll { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-.animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+        html {
+            scroll-behavior: smooth;
+        }
 
-.fade-in-up { animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.fade-in { animation: fadeIn 1.2s ease forwards; }
-.float-anim { animation: float 4s ease-in-out infinite; }
-.pulse-btn { animation: pulse-glow 2s infinite; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--latte);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
 
-.gradient-text {
-  background: linear-gradient(135deg, #B85450 0%, #C9A961 50%, #B85450 100%);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 4s linear infinite;
-}
+        img, svg {
+            display: block;
+            max-width: 100%;
+        }
 
-.hero-gradient {
-  background: radial-gradient(ellipse at top right, rgba(232, 180, 184, 0.3) 0%, transparent 50%),
-              radial-gradient(ellipse at bottom left, rgba(201, 169, 97, 0.15) 0%, transparent 50%),
-              #FDFBF7;
-}
+        a {
+            text-decoration: none;
+        }
 
-.card-hover { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-.card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 60px -15px rgba(184, 84, 80, 0.25); }
+        button {
+            font: inherit;
+        }
 
-.btn-primary {
-  background: linear-gradient(135deg, #B85450 0%, #D4766F 100%);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 35px -5px rgba(184, 84, 80, 0.5); }
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-  transition: left 0.6s;
-}
-.btn-primary:hover::before { left: 100%; }
+        .container {
+            width: min(1200px, calc(100% - 48px));
+            margin: 0 auto;
+        }
 
-.quiz-option {
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  cursor: pointer;
-  border: 2px solid transparent;
-}
-.quiz-option:hover { transform: translateY(-3px); border-color: #C9A961; }
-.quiz-option.selected {
-  background: linear-gradient(135deg, #F5D5D0 0%, #FDFBF7 100%);
-  border-color: #B85450;
-  box-shadow: 0 10px 30px -10px rgba(184, 84, 80, 0.3);
-}
+        .container-narrow {
+            width: min(920px, calc(100% - 48px));
+            margin: 0 auto;
+        }
 
-.faq-item { transition: all 0.3s ease; }
-.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
-.faq-item.active .faq-answer { max-height: 500px; }
-.faq-item.active .faq-icon { transform: rotate(45deg); }
-.faq-icon { transition: transform 0.3s ease; }
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 12px;
+            background: var(--espresso);
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 12px;
+            z-index: 2000;
+        }
 
-.progress-bar { transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .skip-link:focus {
+            left: 12px;
+        }
 
-.testimonial-card { transition: all 0.4s ease; }
-.testimonial-card:hover { transform: translateY(-5px); }
+        /* Progress bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--caramel));
+            z-index: 1200;
+        }
 
-.sticky-bar {
-  transform: translateY(100%);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.sticky-bar.visible { transform: translateY(0); }
+        /* Header */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1100;
+            background: rgba(251, 248, 243, 0.86);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid transparent;
+            transition: all 0.25s ease;
+        }
 
-.countdown-box {
-  background: linear-gradient(135deg, #2D2424 0%, #4A3A3A 100%);
-  animation: countPulse 2s ease-in-out infinite;
-}
+        .site-header.scrolled {
+            background: rgba(251, 248, 243, 0.96);
+            border-color: var(--line);
+            box-shadow: 0 10px 30px rgba(25, 17, 10, 0.06);
+        }
 
-.divider-gold {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #C9A961, transparent);
-}
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 15px 0;
+        }
 
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #FDFBF7; }
-::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #B85450, #C9A961); border-radius: 10px; }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--espresso);
+            letter-spacing: -0.02em;
+        }
 
-@media (max-width: 768px) {
-  .hero-title { font-size: 2.5rem !important; line-height: 1.1 !important; }
-  .section-title { font-size: 2rem !important; }
-}
-</style>
+        .logo span {
+            color: var(--caramel);
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .main-nav a {
+            color: var(--muted);
+            font-size: 0.92rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .main-nav a:hover,
+        .main-nav a:focus-visible {
+            color: var(--espresso);
+        }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 999px;
+            background: var(--espresso);
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 700;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .header-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(25, 17, 10, 0.18);
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 0;
+            border-radius: 999px;
+            padding: 17px 34px;
+            font-size: 1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button:focus-visible {
+            outline: 3px solid rgba(211, 163, 85, 0.4);
+            outline-offset: 3px;
+        }
+
+        .button-primary {
+            background: linear-gradient(135deg, var(--gold), var(--caramel));
+            color: var(--espresso);
+            box-shadow: 0 14px 38px rgba(211, 163, 85, 0.28);
+        }
+
+        .button-dark {
+            background: var(--espresso);
+            color: #fff;
+            box-shadow: 0 14px 38px rgba(25, 17, 10, 0.18);
+        }
+
+        .button-small {
+            padding: 12px 20px;
+            font-size: 0.92rem;
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(ellipse at top right, rgba(211, 163, 85, 0.16), transparent 32%),
+                radial-gradient(ellipse at bottom left, rgba(197, 141, 95, 0.12), transparent 28%),
+                linear-gradient(160deg, #120b06 0%, var(--dark) 44%, var(--medium) 100%);
+            color: #fff;
+            padding: 92px 0 84px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.12fr 0.88fr;
+            gap: 42px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            background: rgba(211, 163, 85, 0.12);
+            border: 1px solid rgba(211, 163, 85, 0.28);
+            color: var(--gold);
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5.2vw, 4.4rem);
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+            margin: 24px 0 20px;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .hero-sub {
+            max-width: 640px;
+            font-size: 1.08rem;
+            line-height: 1.85;
+            color: rgba(255, 255, 255, 0.78);
+            margin-bottom: 26px;
+        }
+
+        .hero-sub strong {
+            color: #fff;
+        }
+
+        .hero-bullets {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+            margin: 0 0 30px;
+            padding: 0;
+        }
+
+        .hero-bullets li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            color: rgba(255, 255, 255, 0.84);
+        }
+
+        .hero-bullets li::before {
+            content: "✓";
+            flex: 0 0 auto;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: rgba(63, 122, 82, 0.18);
+            color: #9fd3ad;
+            font-size: 0.8rem;
+            font-weight: 800;
+            margin-top: 3px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 22px;
+        }
+
+        .hero-note {
+            color: rgba(255, 255, 255, 0.62);
+            font-size: 0.9rem;
+        }
+
+        .hero-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.84rem;
+            font-weight: 600;
+        }
+
+        /* Hero preview */
+        .preview-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 28px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.22);
+        }
+
+        .preview-label {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            font-weight: 800;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .preview-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.65rem;
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .preview-tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+
+        .tab-button {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.78);
+            border-radius: 999px;
+            padding: 10px 15px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .tab-button.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--espresso);
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .recipe-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 22px;
+            padding: 22px;
+        }
+
+        .recipe-name {
+            font-size: 1.08rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .recipe-meta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.68);
+            font-size: 0.88rem;
+        }
+
+        .recipe-steps {
+            display: grid;
+            gap: 10px;
+            padding-left: 18px;
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 0.92rem;
+        }
+
+        .recipe-source {
+            margin-top: 16px;
+            font-size: 0.84rem;
+            color: rgba(255, 255, 255, 0.58);
+        }
+
+        /* Trust strip */
+        .trust-strip {
+            background: var(--white);
+            border-bottom: 1px solid var(--line);
+            padding: 28px 0;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .trust-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .trust-icon {
+            width: 46px;
+            height: 46px;
+            flex: 0 0 auto;
+            border-radius: 14px;
+            background: var(--cream);
+            display: grid;
+            place-items: center;
+            font-size: 1.2rem;
+        }
+
+        .trust-item h3 {
+            font-size: 0.96rem;
+            margin-bottom: 4px;
+        }
+
+        .trust-item p {
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+
+        /* Sections */
+        .section {
+            padding: 96px 0;
+        }
+
+        .section-alt {
+            background: var(--cream);
+        }
+
+        .section-dark {
+            background:
+                radial-gradient(ellipse at top right, rgba(211, 163, 85, 0.1), transparent 25%),
+                var(--espresso);
+            color: #fff;
+        }
+
+        .section-head {
+            max-width: 760px;
+            margin-bottom: 42px;
+        }
+
+        .section-label {
+            font-size: 0.76rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            color: var(--caramel);
+            margin-bottom: 14px;
+        }
+
+        .section-dark .section-label {
+            color: var(--gold);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3.3rem);
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+            margin-bottom: 18px;
+        }
+
+        .section-sub {
+            font-size: 1.02rem;
+            color: var(--muted);
+            max-width: 700px;
+        }
+
+        .section-dark .section-sub {
+            color: rgba(255, 255, 255, 0.74);
+        }
+
+        /* Calculator */
+        .calc-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow);
+            padding: 36px;
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 36px;
+        }
+
+        .input-group {
+            margin-bottom: 28px;
+        }
+
+        .input-label {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .input-label output {
+            color: var(--caramel);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            accent-color: var(--caramel);
+            cursor: pointer;
+        }
+
+        .range-scale {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 0.8rem;
+            color: var(--muted-2);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .result-box {
+            background: var(--cream);
+            border: 1px solid rgba(197, 141, 95, 0.14);
+            border-radius: 18px;
+            padding: 18px;
+        }
+
+        .result-box span {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--muted);
+            margin-bottom: 6px;
+        }
+
+        .result-box strong {
+            font-size: 1.25rem;
+            line-height: 1.2;
+        }
+
+        .result-highlight {
+            grid-column: 1 / -1;
+            background: var(--espresso);
+            border-color: transparent;
+            color: #fff;
+        }
+
+        .result-highlight span {
+            color: rgba(255, 255, 255, 0.68);
+        }
+
+        .calc-note {
+            margin-top: 16px;
+            font-size: 0.84rem;
+            color: var(--muted-2);
+        }
+
+        /* System cards */
+        .system-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .system-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-lg);
+            padding: 28px 24px;
+            box-shadow: 0 10px 30px rgba(25, 17, 10, 0.04);
+        }
+
+        .system-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            display: grid;
+            place-items: center;
+            background: var(--gold-soft);
+            font-size: 1.35rem;
+            margin-bottom: 18px;
+        }
+
+        .system-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+        }
+
+        .system-card p {
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+
+        /* Chapters */
+        .chapter-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .chapter-tab {
+            border: 1px solid var(--line);
+            background: var(--white);
+            color: var(--muted);
+            border-radius: 999px;
+            padding: 11px 17px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .chapter-tab:hover {
+            border-color: var(--caramel);
+            color: var(--text);
+        }
+
+        .chapter-tab.active {
+            background: var(--espresso);
+            border-color: var(--espresso);
+            color: #fff;
+        }
+
+        .chapter-panel {
+            display: none;
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
+            padding: 38px;
+            box-shadow: var(--shadow);
+        }
+
+        .chapter-panel.active {
+            display: block;
+        }
+
+        .chapter-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 24px;
+            margin-bottom: 18px;
+        }
+
+        .chapter-kicker {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--caramel);
+            margin-bottom: 8px;
+        }
+
+        .chapter-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            line-height: 1.15;
+            margin-bottom: 10px;
+        }
+
+        .chapter-desc {
+            color: var(--muted);
+            max-width: 680px;
+        }
+
+        .chapter-pill {
+            flex: 0 0 auto;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: var(--cream);
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .recipe-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        .tag {
+            padding: 8px 13px;
+            border-radius: 999px;
+            background: var(--cream);
+            border: 1px solid rgba(197, 141, 95, 0.14);
+            color: var(--muted);
+            font-size: 0.84rem;
+            font-weight: 600;
+        }
+
+        /* Bonuses */
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .bonus-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(25, 17, 10, 0.04);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bonus-header {
+            padding: 28px 26px 20px;
+            background: linear-gradient(180deg, rgba(211, 163, 85, 0.09), rgba(211, 163, 85, 0.02));
+            border-bottom: 1px solid var(--line);
+        }
+
+        .bonus-badge {
+            display: inline-flex;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: var(--espresso);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.1px;
+            margin-bottom: 16px;
+        }
+
+        .bonus-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .bonus-subtitle {
+            color: var(--caramel);
+            font-weight: 700;
+            font-size: 0.92rem;
+        }
+
+        .bonus-body {
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex: 1;
+        }
+
+        .bonus-body p {
+            font-size: 0.93rem;
+            color: var(--muted);
+        }
+
+        .bonus-list {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bonus-list li {
+            position: relative;
+            padding-left: 22px;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .bonus-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--gold);
+        }
+
+        /* Guarantee */
+        .guarantee-card {
+            background: var(--white);
+            border: 2px solid rgba(63, 122, 82, 0.18);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow);
+            padding: 42px;
+        }
+
+        .guarantee-grid {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 36px;
+            align-items: start;
+        }
+
+        .guarantee-seal {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.22), transparent 28%),
+                linear-gradient(145deg, #47895e, #2d5c3c);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 24px;
+            box-shadow: 0 22px 60px rgba(63, 122, 82, 0.24);
+        }
+
+        .guarantee-seal strong {
+            display: block;
+            font-size: 1.35rem;
+            line-height: 1.15;
+            margin-bottom: 8px;
+        }
+
+        .guarantee-seal span {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.82);
+        }
+
+        .guarantee-copy h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+
+        .guarantee-copy p {
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .guarantee-list {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+            margin: 22px 0;
+            padding: 0;
+        }
+
+        .guarantee-list li {
+            position: relative;
+            padding-left: 30px;
+            color: var(--text);
+        }
+
+        .guarantee-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--green-soft);
+            color: var(--green);
+            font-weight: 800;
+            font-size: 0.8rem;
+        }
+
+        .guarantee-note {
+            padding: 16px 18px;
+            border-radius: 16px;
+            background: var(--green-soft);
+            color: #2c5939;
+            font-weight: 600;
+            font-size: 0.94rem;
+        }
+
+        /* Pricing */
+        .pricing-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .pricing-top {
+            background: linear-gradient(135deg, var(--espresso), #31200f);
+            color: #fff;
+            padding: 38px 34px;
+            text-align: center;
+        }
+
+        .pricing-top .section-label {
+            color: var(--gold);
+        }
+
+        .pricing-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 3vw, 2.7rem);
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        .price-line {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .price-current {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            line-height: 0.95;
+            font-weight: 800;
+        }
+
+        .price-note {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.94rem;
+            margin-top: 10px;
+        }
+
+        .pricing-body {
+            padding: 36px;
+        }
+
+        .includes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .include-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 16px;
+            background: var(--cream);
+            border-radius: 16px;
+        }
+
+        .include-item span {
+            flex: 0 0 auto;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--green-soft);
+            color: var(--green);
+            font-size: 0.78rem;
+            font-weight: 800;
+            margin-top: 2px;
+        }
+
+        .include-item strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .include-item small {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .pricing-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .step-box {
+            padding: 18px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background: #fffdf9;
+        }
+
+        .step-number {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--espresso);
+            color: #fff;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .step-box h4 {
+            font-size: 0.96rem;
+            margin-bottom: 6px;
+        }
+
+        .step-box p {
+            font-size: 0.87rem;
+            color: var(--muted);
+        }
+
+        .pricing-footer {
+            padding: 30px 36px 36px;
+            background: var(--cream);
+            text-align: center;
+        }
+
+        .secure-note {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 0.88rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 22px 24px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            font-size: 1.5rem;
+            line-height: 1;
+            color: var(--caramel);
+            transition: transform 0.2s ease;
+        }
+
+        .faq-item[open] summary::after {
+            content: "-";
+        }
+
+        .faq-answer {
+            padding: 0 24px 22px;
+            color: var(--muted);
+        }
+
+        /* Final CTA */
+        .final-cta {
+            padding: 110px 0;
+            text-align: center;
+        }
+
+        .final-box {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-box p {
+            color: rgba(255, 255, 255, 0.76);
+            max-width: 680px;
+            margin: 0 auto 28px;
+        }
+
+        .final-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        .final-badges .chip {
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            left: 18px;
+            right: 18px;
+            bottom: 18px;
+            z-index: 1150;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            padding: 14px 16px;
+            border-radius: 22px;
+            background: rgba(25, 17, 10, 0.94);
+            color: #fff;
+            box-shadow: 0 24px 70px rgba(25, 17, 10, 0.3);
+            transform: translateY(150%);
+            transition: transform 0.3s ease;
+        }
+
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-cta strong {
+            display: block;
+            font-size: 0.98rem;
+        }
+
+        .sticky-cta span {
+            color: rgba(255, 255, 255, 0.68);
+            font-size: 0.85rem;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--espresso);
+            color: rgba(255, 255, 255, 0.5);
+            padding: 42px 0 100px;
+            text-align: center;
+            font-size: 0.86rem;
+        }
+
+        .site-footer a {
+            color: rgba(255, 255, 255, 0.62);
+            text-decoration: underline;
+        }
+
+        /* Reveal animation */
+        .js .reveal {
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+
+        .js .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+
+            .js .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @media (max-width: 1080px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-grid,
+            .system-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .bonus-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guarantee-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guarantee-seal {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 820px) {
+            .main-nav {
+                display: none;
+            }
+
+            .container,
+            .container-narrow {
+                width: min(100% - 32px, 1200px);
+            }
+
+            .hero {
+                padding-top: 64px;
+            }
+
+            .section {
+                padding: 76px 0;
+            }
+
+            .calc-grid,
+            .includes-grid,
+            .pricing-steps,
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-grid,
+            .system-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chapter-top {
+                flex-direction: column;
+            }
+
+            .sticky-cta {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+            }
+
+            .pricing-body,
+            .pricing-footer,
+            .guarantee-card,
+            .calc-card {
+                padding: 26px;
+            }
+
+            .price-current {
+                font-size: 3.2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding-top: 48px;
+                padding-bottom: 56px;
+            }
+
+            .section {
+                padding: 56px 0;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .button {
+                width: 100%;
+                padding: 16px 24px;
+            }
+
+            .header-inner {
+                padding: 12px 0;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .header-cta {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+
+            .preview-card {
+                padding: 20px;
+            }
+
+            .trust-strip {
+                padding: 32px 0;
+            }
+            
+            .trust-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .trust-icon {
+                margin-bottom: 8px;
+            }
+
+            .sticky-cta {
+                left: 12px;
+                right: 12px;
+                bottom: 12px;
+                padding: 16px;
+                border-radius: 16px;
+            }
+
+            .sticky-cta .button {
+                padding: 12px 18px;
+            }
+
+            .faq-item summary {
+                padding: 18px;
+                font-size: 0.95rem;
+            }
+
+            .faq-answer {
+                padding: 0 18px 18px;
+            }
+            
+            .price-current {
+                font-size: 2.8rem;
+            }
+            
+            .pricing-top {
+                padding: 32px 20px;
+            }
+            
+            .pricing-body {
+                padding: 20px;
+            }
+            
+            .pricing-footer {
+                padding: 24px 20px;
+            }
+
+            .calc-card, .chapter-panel, .guarantee-card {
+                padding: 20px;
+            }
+            
+            .hero-chips {
+                justify-content: center;
+            }
+            
+            .hero-bullets li {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="progress-bar" id="progressBar"></div>
 
-<!-- Sticky Mobile Bar -->
-<div id="stickyBar" class="sticky-bar fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-t border-roseSoft md:hidden">
-  <div class="flex items-center justify-between p-3">
-    <div>
-      <div class="text-xs text-dark/60">De <span class="line-through">$29</span></div>
-      <div class="text-lg font-serif font-bold text-roseDeep">$6.00</div>
-    </div>
-    <a href="#oferta" class="btn-primary text-white px-6 py-3 rounded-full font-semibold text-sm">
-      Comprar Ahora
-    </a>
-  </div>
-</div>
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#top" class="logo">The Coffee <span>Ritual</span></a>
 
-<!-- Top Bar -->
-<div class="bg-dark text-white py-2.5 text-center text-xs md:text-sm">
-  <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-2 md:gap-6 flex-wrap">
-    <span class="flex items-center gap-1.5">🔒 Compra 100% Segura</span>
-    <span class="hidden md:inline">•</span>
-    <span class="flex items-center gap-1.5">⚡ Acceso Inmediato</span>
-    <span class="hidden md:inline">•</span>
-    <span class="flex items-center gap-1.5">💳 Hasta 8x en tarjeta</span>
-    <span class="hidden md:inline">•</span>
-    <span class="flex items-center gap-1.5">✓ Garantía de 7 Días</span>
-  </div>
-</div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#calculator">Savings Calculator</a>
+                <a href="#inside">What’s Inside</a>
+                <a href="#bonuses">Bonuses</a>
+                <a href="#guarantee">Guarantee</a>
+                <a href="#faq">FAQ</a>
+            </nav>
 
-<!-- Header -->
-<header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-lg border-b border-roseSoft/50">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
-    <a href="#" class="font-serif text-2xl md:text-3xl font-bold gradient-text tracking-tight">ELIAVE</a>
-    <a href="#oferta" class="hidden md:inline-flex btn-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold items-center gap-2">
-      Garantizar Acceso
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-    </a>
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero-gradient relative overflow-hidden">
-  <div class="absolute top-20 right-10 w-64 h-64 bg-roseSoft/40 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-10 left-10 w-80 h-80 bg-gold/10 rounded-full blur-3xl"></div>
-  
-  <div class="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20 lg:py-24 relative">
-    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-      
-      <!-- Text -->
-      <div class="order-2 lg:order-1 text-center lg:text-left">
-        <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 shadow-soft fade-in">
-          <span class="w-2 h-2 bg-roseDeep rounded-full animate-pulse"></span>
-          <span class="text-xs md:text-sm font-semibold text-dark tracking-wide">MÉTODO EXCLUSIVO • BELLEZA SOSTENIBLE Y NATURAL</span>
+            <a href="#pricing" class="header-cta">Get Access — $14.99</a>
         </div>
-        
-        <h1 class="hero-title font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight mb-6 fade-in-up">
-          Redescubre la <span class="gradient-text">Juventud</span> de Tu Rostro de Forma 100% Natural
-        </h1>
-        
-        <p class="text-base md:text-lg text-dark/70 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed fade-in-up" style="animation-delay: 0.2s;">
-          Un método comprobado inspirado en los <strong>secretos coreanos</strong> para levantar, tonificar y esculpir tu rostro con solo <strong>10 minutos diarios</strong>. Sin agujas, sin dolor y en la comodidad de tu hogar.
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-3 mb-8 justify-center lg:justify-start fade-in-up" style="animation-delay: 0.3s;">
-          <a href="#oferta" class="btn-primary pulse-btn text-white px-8 py-4 rounded-full font-semibold text-base md:text-lg inline-flex items-center justify-center gap-2">
-            Quiero Esculpir Mi Rostro
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-          </a>
-        </div>
-        
-        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-6 text-sm text-dark/70 fade-in-up" style="animation-delay: 0.4s;">
-          <div class="flex items-center gap-2">
-            <span class="text-lg">📖</span>
-            <span class="font-semibold">E-book en PDF</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="text-lg">⚡</span>
-            <span class="font-semibold">Acceso Inmediato</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="text-lg">🛡️</span>
-            <span class="font-semibold">Garantía 7 Días</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Image -->
-      <div class="order-1 lg:order-2 relative fade-in" style="animation-delay: 0.3s;">
-        <div class="relative max-w-md mx-auto lg:max-w-none">
-          <div class="absolute -inset-4 bg-gradient-to-br from-roseSoft to-gold/20 rounded-[3rem] blur-2xl opacity-60"></div>
-          <div class="relative">
-            <img src="https://i.imgur.com/OpSq1EU.png" 
-                 alt="Mujer con rostro esculpido" 
-                 class="w-full rounded-[2.5rem] shadow-2xl object-cover aspect-[4/5]">
-            
-            <!-- Floating Card -->
-            <div class="absolute -bottom-6 -left-6 md:-left-10 bg-white rounded-2xl shadow-soft p-4 md:p-5 float-anim">
-              <div class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-roseSoft to-roseDeep/30 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <div class="container hero-grid">
                 <div>
-                  <div class="text-xs text-dark/60">Resultados en</div>
-                  <div class="font-serif font-bold text-dark text-lg">21 días</div>
+                    <span class="eyebrow">Complete Home Café System</span>
+                    <h1>
+                        Make café-level coffee at home —
+                        <em>without the machine, the guesswork, or the daily expense.</em>
+                    </h1>
+                    <p class="hero-sub">
+                        <strong>The Coffee Ritual</strong> is a 4-part digital system with 50 detailed recipes,
+                        homemade syrup guides, brunch pairings, and a guided 7-day barista challenge.
+                        Everything is designed to be practical, transparent, and protected by a real guarantee.
+                    </p>
+
+                    <ul class="hero-bullets">
+                        <li>50 café-style recipes with prep time, calories, and clear steps</li>
+                        <li>Homemade syrups, sauces, cold foams, and brunch pairings</li>
+                        <li>7-day guided challenge to build confidence fast</li>
+                        <li>No expensive espresso machine required</li>
+                    </ul>
+
+                    <div class="hero-actions">
+                        <a href="#pricing" class="button button-primary">
+                            Get Instant Access — $14.99
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="#calculator" class="button button-dark button-small">
+                            Calculate My Savings
+                        </a>
+                    </div>
+
+                    <p class="hero-note">
+                        One-time payment · Instant digital access · 30-day money-back guarantee
+                    </p>
+
+                    <div class="hero-chips">
+                        <span class="chip">🛡️ 30-Day Guarantee</span>
+                        <span class="chip">📥 Instant PDF Download</span>
+                        <span class="chip">🚫 No Subscription</span>
+                        <span class="chip">☕ Simple Equipment</span>
+                    </div>
                 </div>
-              </div>
+
+                <div class="preview-card reveal">
+                    <p class="preview-label">Interactive Preview</p>
+                    <h2 class="preview-title">See the clarity inside before you decide</h2>
+
+                    <div class="preview-tabs" data-tabs>
+                        <button class="tab-button active" data-tab-button="preview-iced" type="button">Iced</button>
+                        <button class="tab-button" data-tab-button="preview-hot" type="button">Hot</button>
+                        <button class="tab-button" data-tab-button="preview-foam" type="button">Cold Foam</button>
+                    </div>
+
+                    <div class="tab-panel active" data-tab-panel="preview-iced">
+                        <div class="recipe-card">
+                            <h3 class="recipe-name">Brown Sugar Shaken Espresso</h3>
+                            <div class="recipe-meta">
+                                <span>⏱ 7 min</span>
+                                <span>🔥 ~120 kcal</span>
+                                <span>🧊 Iced</span>
+                            </div>
+                            <ol class="recipe-steps">
+                                <li>Brew strong coffee or espresso base</li>
+                                <li>Shake with brown sugar syrup while hot</li>
+                                <li>Add coffee ice cubes to avoid dilution</li>
+                                <li>Layer and finish with a light pour</li>
+                            </ol>
+                            <p class="recipe-source">From Chapter 1 — Iced Coffees</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-tab-panel="preview-hot">
+                        <div class="recipe-card">
+                            <h3 class="recipe-name">Cinnamon Roll Latte</h3>
+                            <div class="recipe-meta">
+                                <span>⏱ 10 min</span>
+                                <span>🔥 ~210 kcal</span>
+                                <span>☕ Hot</span>
+                            </div>
+                            <ol class="recipe-steps">
+                                <li>Prepare cinnamon-brown sugar base</li>
+                                <li>Warm and texture the milk</li>
+                                <li>Combine in layers for flavor balance</li>
+                                <li>Finish with a soft topping swirl</li>
+                            </ol>
+                            <p class="recipe-source">From Chapter 2 — Hot Café Drinks</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" data-tab-panel="preview-foam">
+                        <div class="recipe-card">
+                            <h3 class="recipe-name">Salted Caramel Cold Foam</h3>
+                            <div class="recipe-meta">
+                                <span>⏱ 5 min</span>
+                                <span>🔥 ~90 kcal</span>
+                                <span>☁️ Foam</span>
+                            </div>
+                            <ol class="recipe-steps">
+                                <li>Start with chilled cream base</li>
+                                <li>Whisk to the target density</li>
+                                <li>Test float before pouring</li>
+                                <li>Layer over iced coffee cleanly</li>
+                            </ol>
+                            <p class="recipe-source">From Chapter 4 — Cold Foam Collection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST STRIP -->
+        <section class="trust-strip">
+            <div class="container trust-grid">
+                <div class="trust-item reveal">
+                    <div class="trust-icon">🛡️</div>
+                    <div>
+                        <h3>30-Day Guarantee</h3>
+                        <p>Try the system and request a refund if it does not feel worth it.</p>
+                    </div>
+                </div>
+                <div class="trust-item reveal">
+                    <div class="trust-icon">📥</div>
+                    <div>
+                        <h3>Instant Access</h3>
+                        <p>Download the full bundle immediately after checkout.</p>
+                    </div>
+                </div>
+                <div class="trust-item reveal">
+                    <div class="trust-icon">🧰</div>
+                    <div>
+                        <h3>Simple Equipment</h3>
+                        <p>Designed for a French press, glass jar, and hand whisk.</p>
+                    </div>
+                </div>
+                <div class="trust-item reveal">
+                    <div class="trust-icon">✅</div>
+                    <div>
+                        <h3>Transparent Scope</h3>
+                        <p>Clear deliverables, clear guarantee, no required upsells.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALCULATOR -->
+        <section class="section" id="calculator">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Decision Tool</p>
+                    <h2 class="section-title">Calculate your savings before you buy</h2>
+                    <p class="section-sub">
+                        Use the sliders to estimate how much you currently spend on café drinks —
+                        and how much you could keep by making them at home.
+                    </p>
+                </div>
+
+                <div class="calc-card reveal">
+                    <div class="calc-grid">
+                        <div>
+                            <div class="input-group">
+                                <label class="input-label" for="drinksRange">
+                                    Café drinks per week
+                                    <output id="drinksValue">5</output>
+                                </label>
+                                <input type="range" id="drinksRange" min="1" max="21" step="1" value="5">
+                                <div class="range-scale">
+                                    <span>1</span>
+                                    <span>21</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label class="input-label" for="priceRange">
+                                    Average café price per drink
+                                    <output id="priceValue">$6.00</output>
+                                </label>
+                                <input type="range" id="priceRange" min="3" max="12" step="0.5" value="6">
+                                <div class="range-scale">
+                                    <span>$3</span>
+                                    <span>$12</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label class="input-label" for="homeRange">
+                                    Estimated homemade cost per drink
+                                    <output id="homeValue">$0.85</output>
+                                </label>
+                                <input type="range" id="homeRange" min="0.5" max="2.5" step="0.05" value="0.85">
+                                <div class="range-scale">
+                                    <span>$0.50</span>
+                                    <span>$2.50</span>
+                                </div>
+                            </div>
+
+                            <p class="calc-note">
+                                Estimates only. Your actual costs may vary depending on ingredients, location, and preferences.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="results-grid">
+                                <div class="result-box">
+                                    <span>Weekly café cost</span>
+                                    <strong id="cafeWeekly">$30.00</strong>
+                                </div>
+                                <div class="result-box">
+                                    <span>Weekly homemade cost</span>
+                                    <strong id="homeWeekly">$4.25</strong>
+                                </div>
+                                <div class="result-box">
+                                    <span>Estimated monthly savings</span>
+                                    <strong id="monthlySavings">$111.71</strong>
+                                </div>
+                                <div class="result-box">
+                                    <span>Estimated yearly savings</span>
+                                    <strong id="yearlySavings">$1,339.00</strong>
+                                </div>
+                                <div class="result-box result-highlight">
+                                    <span>Bundle equivalence</span>
+                                    <strong id="bundleEquivalent">The $14.99 bundle equals about 4.5 café drinks</strong>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 24px;">
+                                <a href="#pricing" class="button button-primary">Get The Coffee Ritual — $14.99</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SYSTEM -->
+        <section class="section section-alt" id="inside">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Product Architecture</p>
+                    <h2 class="section-title">Everything organized for action</h2>
+                    <p class="section-sub">
+                        The Coffee Ritual is not just a recipe list. It is a complete system that helps you
+                        learn, prepare, pair, and practice with clarity.
+                    </p>
+                </div>
+
+                <div class="system-grid">
+                    <article class="system-card reveal">
+                        <div class="system-icon">📖</div>
+                        <h3>1. Learn</h3>
+                        <p>
+                            The main book gives you 50 café recipes across five chapters, with prep time,
+                            calorie estimates, and step-by-step instructions.
+                        </p>
+                    </article>
+
+                    <article class="system-card reveal">
+                        <div class="system-icon">🍯</div>
+                        <h3>2. Build</h3>
+                        <p>
+                            The Home Café Pantry bonus teaches syrups, sauces, toppings, and practical
+                            techniques that create real café flavor at home.
+                        </p>
+                    </article>
+
+                    <article class="system-card reveal">
+                        <div class="system-icon">🥐</div>
+                        <h3>3. Pair</h3>
+                        <p>
+                            The Brunch Club bonus expands the experience with toasts, bakery items,
+                            eggs, and a simple pairing framework.
+                        </p>
+                    </article>
+
+                    <article class="system-card reveal">
+                        <div class="system-icon">🗓️</div>
+                        <h3>4. Practice</h3>
+                        <p>
+                            The 7-Day Challenge turns information into habit with one drink per day,
+                            one technique per day, and a tasting scorecard.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTERS -->
+        <section class="section" id="chapters">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Core Book</p>
+                    <h2 class="section-title">Explore the 5 main chapters</h2>
+                    <p class="section-sub">
+                        Click through each chapter to see the type of drinks you will be able to make.
+                    </p>
+                </div>
+
+                <div class="chapter-tabs reveal" data-tabs>
+                    <button class="chapter-tab active" data-tab-button="chapter-1" type="button">Iced Coffees</button>
+                    <button class="chapter-tab" data-tab-button="chapter-2" type="button">Hot Café Drinks</button>
+                    <button class="chapter-tab" data-tab-button="chapter-3" type="button">Specialty & Dessert</button>
+                    <button class="chapter-tab" data-tab-button="chapter-4" type="button">Cold Foam</button>
+                    <button class="chapter-tab" data-tab-button="chapter-5" type="button">Seasonal Café</button>
+                </div>
+
+                <div class="chapter-panel active reveal" data-tab-panel="chapter-1">
+                    <div class="chapter-top">
+                        <div>
+                            <p class="chapter-kicker">Chapter 01</p>
+                            <h3 class="chapter-title">Iced Coffees</h3>
+                            <p class="chapter-desc">
+                                Balanced, refreshing cold drinks built with clear layering and dilution control.
+                                Ideal for quick mornings, warm afternoons, and effortless everyday café moments.
+                            </p>
+                        </div>
+                        <span class="chapter-pill">10 recipes</span>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Vanilla Iced Latte</span>
+                        <span class="tag">Brown Sugar Shaken Espresso</span>
+                        <span class="tag">Biscoff Iced Latte</span>
+                        <span class="tag">Strawberry Cream Coffee</span>
+                        <span class="tag">+ 6 more</span>
+                    </div>
+                </div>
+
+                <div class="chapter-panel reveal" data-tab-panel="chapter-2">
+                    <div class="chapter-top">
+                        <div>
+                            <p class="chapter-kicker">Chapter 02</p>
+                            <h3 class="chapter-title">Hot Café Drinks</h3>
+                            <p class="chapter-desc">
+                                Warm, velvety classics focused on milk texture, sweetness balance, and flavor layering.
+                                Perfect for building a comforting daily ritual.
+                            </p>
+                        </div>
+                        <span class="chapter-pill">10 recipes</span>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Cinnamon Roll Latte</span>
+                        <span class="tag">White Mocha</span>
+                        <span class="tag">Hazelnut Latte</span>
+                        <span class="tag">Tiramisu Latte</span>
+                        <span class="tag">+ 6 more</span>
+                    </div>
+                </div>
+
+                <div class="chapter-panel reveal" data-tab-panel="chapter-3">
+                    <div class="chapter-top">
+                        <div>
+                            <p class="chapter-kicker">Chapter 03</p>
+                            <h3 class="chapter-title">Specialty & Dessert Coffees</h3>
+                            <p class="chapter-desc">
+                                Indulgent, dessert-inspired drinks for moments when you want something more expressive.
+                                Great for weekends, hosting, and elevated treats.
+                            </p>
+                        </div>
+                        <span class="chapter-pill">10 recipes</span>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Cookies & Cream</span>
+                        <span class="tag">Pistachio Latte</span>
+                        <span class="tag">Strawberry Cheesecake Coffee</span>
+                        <span class="tag">Crème Brûlée Latte</span>
+                        <span class="tag">+ 6 more</span>
+                    </div>
+                </div>
+
+                <div class="chapter-panel reveal" data-tab-panel="chapter-4">
+                    <div class="chapter-top">
+                        <div>
+                            <p class="chapter-kicker">Chapter 04</p>
+                            <h3 class="chapter-title">Cold Foam Collection</h3>
+                            <p class="chapter-desc">
+                                A practical guide to cold foams by density, texture, and pour behavior.
+                                This is where your drinks start looking visually café-level.
+                            </p>
+                        </div>
+                        <span class="chapter-pill">10 recipes</span>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Vanilla Sweet Cream</span>
+                        <span class="tag">Biscoff Foam</span>
+                        <span class="tag">Salted Caramel Foam</span>
+                        <span class="tag">Chocolate Cold Foam</span>
+                        <span class="tag">Coconut Cold Foam</span>
+                        <span class="tag">+ 5 more</span>
+                    </div>
+                </div>
+
+                <div class="chapter-panel reveal" data-tab-panel="chapter-5">
+                    <div class="chapter-top">
+                        <div>
+                            <p class="chapter-kicker">Chapter 05</p>
+                            <h3 class="chapter-title">Seasonal Café</h3>
+                            <p class="chapter-desc">
+                                Drinks aligned with the four seasons so your home café never feels repetitive.
+                                Rotate your menu throughout the year with ease.
+                            </p>
+                        </div>
+                        <span class="chapter-pill">10 recipes</span>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Pumpkin Spice</span>
+                        <span class="tag">Gingerbread Latte</span>
+                        <span class="tag">Peppermint Mocha</span>
+                        <span class="tag">Blueberry Vanilla Iced</span>
+                        <span class="tag">+ 6 more</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BONUSES -->
+        <section class="section section-alt" id="bonuses">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Included Bonuses</p>
+                    <h2 class="section-title">Three bonuses that complete the system</h2>
+                    <p class="section-sub">
+                        Each bonus solves a specific part of the home café experience:
+                        ingredients, food pairing, and practical execution.
+                    </p>
+                </div>
+
+                <div class="bonus-grid">
+                    <article class="bonus-card reveal">
+                        <div class="bonus-header">
+                            <span class="bonus-badge">Bonus #1</span>
+                            <h3 class="bonus-title">The Home Café Pantry</h3>
+                            <p class="bonus-subtitle">Syrups, sauces & artisan basics</p>
+                        </div>
+                        <div class="bonus-body">
+                            <p>
+                                Learn how to build the flavor foundations of café drinks with simple ingredients
+                                and better control over quality.
+                            </p>
+                            <ul class="bonus-list">
+                                <li>Homemade base syrups with longer shelf life</li>
+                                <li>Structured sauces and toppings for layering</li>
+                                <li>Quick sweet pairings for serving</li>
+                                <li>Coffee ice cubes and microfoam techniques</li>
+                                <li>Milk behavior comparison guide</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="bonus-card reveal">
+                        <div class="bonus-header">
+                            <span class="bonus-badge">Bonus #2</span>
+                            <h3 class="bonus-title">The Home Café Brunch Club</h3>
+                            <p class="bonus-subtitle">Toasts, bakery & pairing</p>
+                        </div>
+                        <div class="bonus-body">
+                            <p>
+                                Expand the ritual beyond the cup with brunch recipes and a practical
+                                pairing framework.
+                            </p>
+                            <ul class="bonus-list">
+                                <li>Gourmet toasts and tartines</li>
+                                <li>Bakery and skillet recipes</li>
+                                <li>Café-style egg preparations</li>
+                                <li>Pairing matrix for contrast and resonance</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="bonus-card reveal">
+                        <div class="bonus-header">
+                            <span class="bonus-badge">Bonus #3</span>
+                            <h3 class="bonus-title">7-Day Home Café Challenge</h3>
+                            <p class="bonus-subtitle">Practice roadmap & skill builder</p>
+                        </div>
+                        <div class="bonus-body">
+                            <p>
+                                Turn the material into action with a guided one-week plan designed to build
+                                confidence step by step.
+                            </p>
+                            <ul class="bonus-list">
+                                <li>One drink per day, from simple to expressive</li>
+                                <li>One technique per day</li>
+                                <li>Tasting scorecard for progress</li>
+                                <li>Minimum equipment checklist</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="bonus-card reveal">
+                        <div class="bonus-header">
+                            <span class="bonus-badge">Bonus #4</span>
+                            <h3 class="bonus-title">The Video Recipe Library</h3>
+                            <p class="bonus-subtitle">10 Step-by-step visual guides</p>
+                        </div>
+                        <div class="bonus-body">
+                            <p>
+                                Watch exactly how the magic happens with high-quality video tutorials for 10 of our most popular café recipes.
+                            </p>
+                            <ul class="bonus-list">
+                                <li>Visual cues for milk texture and pouring</li>
+                                <li>Real-time layering techniques</li>
+                                <li>Hosted on a premium, ad-free private player</li>
+                                <li>Follow along easily in your own kitchen</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUARANTEE -->
+        <section class="section" id="guarantee">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Risk Reversal</p>
+                    <h2 class="section-title">The 30-Day First Sip Guarantee</h2>
+                    <p class="section-sub">
+                        The guarantee is not an afterthought on this page. It is the central reason
+                        you can decide with confidence.
+                    </p>
+                </div>
+
+                <div class="guarantee-card reveal">
+                    <div class="guarantee-grid">
+                        <div class="guarantee-seal">
+                            <div>
+                                <strong>30-Day<br>Money-Back</strong>
+                                <span>First Sip Guarantee</span>
+                            </div>
+                        </div>
+
+                        <div class="guarantee-copy">
+                            <h3>Try it. Make it. If it does not feel worth it, get a refund.</h3>
+                            <p>
+                                We believe the strongest way to sell this product is with clarity, not pressure.
+                                You can access the complete system, explore the recipes, use the pantry guide,
+                                and follow the 7-day challenge.
+                            </p>
+                            <p>
+                                If within 30 days you feel the experience did not deliver clear value,
+                                simply request a refund. No complicated forms. No subscription cancellation steps.
+                                No pressure.
+                            </p>
+
+                            <ul class="guarantee-list">
+                                <li>Full access to the main book and all three bonuses</li>
+                                <li>30 days to evaluate the system in your own routine</li>
+                                <li>Simple refund request process</li>
+                                <li>No recurring charges and no hidden commitments</li>
+                            </ul>
+
+                            <div class="guarantee-note">
+                                Our promise is transparent: clear deliverables, practical guidance, and a real guarantee.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="section section-alt" id="pricing">
+            <div class="container-narrow">
+                <div class="section-head reveal" style="margin-left: auto; margin-right: auto; text-align: center;">
+                    <p class="section-label">Complete Bundle</p>
+                    <h2 class="section-title">Get everything today</h2>
+                    <p class="section-sub" style="margin-left: auto; margin-right: auto;">
+                        One payment. Lifetime access. No subscription.
+                    </p>
+                </div>
+
+                <div class="pricing-card reveal">
+                    <div class="pricing-top">
+                        <p class="section-label">The Coffee Ritual</p>
+                        <h3 class="pricing-title">Complete Home Café Bundle</h3>
+                        <div class="price-line">
+                            <div class="price-current">$14.99</div>
+                        </div>
+                        <p class="price-note">
+                            Less than the cost of a few café drinks — and protected by a 30-day guarantee.
+                        </p>
+                    </div>
+
+                    <div class="pricing-body">
+                        <div class="includes-grid">
+                            <div class="include-item">
+                                <span>✓</span>
+                                <div>
+                                    <strong>The Coffee Ritual — Main Book</strong>
+                                    <small>50 café-style recipes across five practical chapters.</small>
+                                </div>
+                            </div>
+                            <div class="include-item">
+                                <span>✓</span>
+                                <div>
+                                    <strong>The Home Café Pantry</strong>
+                                    <small>Syrups, sauces, toppings, and technical foundations.</small>
+                                </div>
+                            </div>
+                            <div class="include-item">
+                                <span>✓</span>
+                                <div>
+                                    <strong>The Home Café Brunch Club</strong>
+                                    <small>Toasts, bakery, eggs, and pairing guidance.</small>
+                                </div>
+                            </div>
+                            <div class="include-item">
+                                <span>✓</span>
+                                <div>
+                                    <strong>7-Day Home Café Challenge</strong>
+                                    <small>A guided plan to build confidence and routine.</small>
+                                </div>
+                            </div>
+                            <div class="include-item">
+                                <span>✓</span>
+                                <div>
+                                    <strong>Lifetime Access</strong>
+                                    <small>Download once and keep the files permanently.</small>
+                                </div>
+                            </div>
+                            <div class="include-item">
+                                <span>✓</span>
+                                <div>
+                                    <strong>30-Day Guarantee</strong>
+                                    <small>Request a refund if it does not feel worth it.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-steps">
+                            <div class="step-box">
+                                <div class="step-number">1</div>
+                                <h4>Checkout securely</h4>
+                                <p>Complete your order with a one-time payment.</p>
+                            </div>
+                            <div class="step-box">
+                                <div class="step-number">2</div>
+                                <h4>Receive instant access</h4>
+                                <p>Get the digital files immediately after purchase.</p>
+                            </div>
+                            <div class="step-box">
+                                <div class="step-number">3</div>
+                                <h4>Start your first ritual</h4>
+                                <p>Begin with the 7-day challenge or jump straight to a recipe.</p>
+                            </div>
+                        </div>
+
+                        <p style="text-align: center;">
+                            <a href="https://pay.hotmart.com/D107782705T?bid=1790807950410" class="button button-primary" target="_blank">Complete My Order — $14.99</a>
+                        </p>
+                    </div>
+
+                    <div class="pricing-footer">
+                        <p style="font-weight: 700; margin-bottom: 12px;">What this is not:</p>
+                        <p style="color: var(--muted); max-width: 640px; margin: 0 auto;">
+                            This is not a physical product, not a subscription, and it does not include equipment.
+                            It is a digital system designed to help you create café-quality drinks at home.
+                        </p>
+                        <div class="secure-note">
+                            <span>🔒 Secure checkout</span>
+                            <span>📥 Instant delivery</span>
+                            <span>🛡️ 30-day guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container-narrow">
+                <div class="section-head reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
+                    <p class="section-label">Objection Handling</p>
+                    <h2 class="section-title">Frequently asked questions</h2>
+                </div>
+
+                <div class="faq-list reveal">
+                    <details class="faq-item" open>
+                        <summary>Do I need an espresso machine?</summary>
+                        <div class="faq-answer">
+                            No. The system is designed to work with accessible tools such as a French press,
+                            an airtight glass jar, and a hand whisk. You can upgrade your equipment later if you want,
+                            but it is not required to start.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What exactly do I receive?</summary>
+                        <div class="faq-answer">
+                            You receive the main book and three bonus guides in digital format.
+                            Everything is available as downloadable files after checkout.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is this suitable for beginners?</summary>
+                        <div class="faq-answer">
+                            Yes. The 7-Day Challenge was designed to help beginners build confidence gradually,
+                            with one drink and one technique per day.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Are there plant-based options?</summary>
+                        <div class="faq-answer">
+                            Yes. The system includes guidance for working with different types of milk,
+                            including plant-based alternatives, and helps you understand how each one behaves.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How does the guarantee work?</summary>
+                        <div class="faq-answer">
+                            You can try the complete system for 30 days. If you feel it did not deliver clear value,
+                            you can request a refund through the purchase support channel.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is there a subscription?</summary>
+                        <div class="faq-answer">
+                            No. This is a one-time purchase with lifetime access. There are no recurring charges.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="section-dark final-cta">
+            <div class="container final-box reveal">
+                <span class="eyebrow">Ready When You Are</span>
+                <h2 class="section-title" style="margin-top: 18px;">
+                    Start your home café ritual today
+                </h2>
+                <p>
+                    You do not need more pressure. You need a clear system, a fair price, and a guarantee
+                    that removes the risk. The Coffee Ritual gives you all three.
+                </p>
+                <a href="#pricing" class="button button-primary">
+                    Get Instant Access — $14.99
+                    <span aria-hidden="true">→</span>
+                </a>
+                <div class="final-badges">
+                    <span class="chip">🛡️ 30-Day Guarantee</span>
+                    <span class="chip">📥 Instant Access</span>
+                    <span class="chip">🚫 No Subscription</span>
+                    <span class="chip">☕ Practical System</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LEGAL & CONTACT -->
+    <section class="section section-alt" id="legal">
+        <div class="container-narrow">
+            <div class="section-head reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
+                <p class="section-label">Legal Information</p>
+                <h2 class="section-title">Privacy Policy, Terms & Contact</h2>
             </div>
             
-            <!-- Floating Badge -->
-            <div class="absolute -top-4 -right-4 md:-right-6 bg-white rounded-2xl shadow-soft p-3 md:p-4 float-anim" style="animation-delay: 1s;">
-              <div class="text-center">
-                <div class="text-2xl md:text-3xl font-serif font-bold gradient-text">10min</div>
-                <div class="text-xs text-dark/60">por día</div>
-              </div>
+            <div class="legal-content reveal" style="color: var(--muted); background: var(--white); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow);">
+                <h3 id="privacy" style="font-family: 'Playfair Display', serif; color: var(--espresso); margin-bottom: 16px; font-size: 1.5rem; border-bottom: 1px solid var(--line); padding-bottom: 8px;">Privacy Policy</h3>
+                <p style="margin-bottom: 16px;">This Privacy Policy governs the manner in which The Coffee Ritual collects, uses, maintains, and discloses information. It applies globally.</p>
+                <ul style="margin-bottom: 24px; padding-left: 20px;">
+                    <li><strong>Information Collection:</strong> We collect personal identification info (like email) only when voluntarily submitted, for instance, during checkout.</li>
+                    <li><strong>Usage:</strong> Collected info is strictly used for payment processing, product delivery, and customer service.</li>
+                    <li><strong>Cookies:</strong> Our site uses basic cookies to enhance user experience and process orders.</li>
+                    <li><strong>Protection:</strong> We adopt appropriate data collection and processing practices to protect against unauthorized access, in compliance with GDPR and CCPA.</li>
+                </ul>
+
+                <h3 id="terms" style="font-family: 'Playfair Display', serif; color: var(--espresso); margin-bottom: 16px; font-size: 1.5rem; border-bottom: 1px solid var(--line); padding-bottom: 8px;">Terms of Service</h3>
+                <p style="margin-bottom: 16px;">By accessing this website, you agree to be bound by these Terms and Conditions of Use.</p>
+                <ul style="margin-bottom: 24px; padding-left: 20px;">
+                    <li><strong>Use License:</strong> Permission is granted to download one copy of the digital materials for personal, non-commercial viewing. You may not modify, copy, or distribute these materials.</li>
+                    <li><strong>Disclaimer:</strong> Materials are provided "as is". We disclaim all other warranties, including implied warranties of merchantability.</li>
+                    <li><strong>International Scope:</strong> These terms are applicable worldwide. Our 30-day money-back guarantee is valid internationally.</li>
+                </ul>
+
+                <h3 id="contact" style="font-family: 'Playfair Display', serif; color: var(--espresso); margin-bottom: 16px; font-size: 1.5rem; border-bottom: 1px solid var(--line); padding-bottom: 8px;">Contact Us</h3>
+                <p style="margin-bottom: 16px;">If you have any questions, need support, or wish to request a refund under our guarantee, please reach out:</p>
+                <ul style="margin-bottom: 0; padding-left: 20px;">
+                    <li><strong>Email:</strong> <a href="mailto:eliave.collection@gmail.com" style="color: var(--caramel); text-decoration: none; font-weight: 500;">eliave.collection@gmail.com</a></li>
+                    <li><strong>Instagram:</strong> Send us a DM at our official profile</li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+    <div class="sticky-cta" id="stickyCta">
+        <div>
+            <strong>The Coffee Ritual — $14.99</strong>
+            <span>Complete bundle · 30-day guarantee</span>
+        </div>
+        <a href="#pricing" class="button button-primary button-small">Get Access</a>
     </div>
-  </div>
-</section>
 
-<!-- Social Proof Bar -->
-<section class="bg-white border-y border-roseSoft/30 py-8 md:py-10">
-  <div class="max-w-7xl mx-auto px-4 md:px-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 text-center">
-      <div class="animate-on-scroll">
-        <div class="text-3xl md:text-4xl mb-2">📱</div>
-        <div class="font-serif text-lg md:text-xl font-bold text-dark mb-1">100% Digital</div>
-        <div class="text-sm text-dark/60">Acceso desde celular o PC</div>
-      </div>
-      <div class="animate-on-scroll" style="transition-delay: 0.1s;">
-        <div class="text-3xl md:text-4xl mb-2">⚡</div>
-        <div class="font-serif text-lg md:text-xl font-bold text-dark mb-1">Acceso Inmediato</div>
-        <div class="text-sm text-dark/60">Tras la confirmación</div>
-      </div>
-      <div class="animate-on-scroll" style="transition-delay: 0.2s;">
-        <div class="text-3xl md:text-4xl mb-2">🛡️</div>
-        <div class="font-serif text-lg md:text-xl font-bold text-dark mb-1">Garantía 7 Días</div>
-        <div class="text-sm text-dark/60">Reembolso sin burocracia</div>
-      </div>
-      <div class="animate-on-scroll" style="transition-delay: 0.3s;">
-        <div class="text-3xl md:text-4xl mb-2">⏱️</div>
-        <div class="font-serif text-lg md:text-xl font-bold text-dark mb-1">10min por día</div>
-        <div class="text-sm text-dark/60">Rutina simple y práctica</div>
-      </div>
-    </div>
-  </div>
-</section>
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                © 2025 The Coffee Ritual. All rights reserved.<br>
+                This is a digital product. No physical items will be shipped.<br><br>
+                <a href="#privacy">Privacy Policy</a> ·
+                <a href="#terms">Terms of Service</a> ·
+                <a href="#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
 
-<!-- Problem Section -->
-<section class="py-16 md:py-24 bg-warm">
-  <div class="max-w-5xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-12 md:mb-16 animate-on-scroll">
-      <div class="inline-block text-xs md:text-sm font-semibold text-roseDeep tracking-widest mb-3">¿TE IDENTIFICAS?</div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        Te miras al espejo y sientes que...
-      </h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-roseDeep to-gold mx-auto rounded-full"></div>
-    </div>
-    
-    <div class="space-y-4 md:space-y-5">
-      <div class="animate-on-scroll bg-white rounded-2xl p-6 md:p-8 shadow-soft card-hover border-l-4 border-roseDeep">
-        <div class="flex gap-4 md:gap-6 items-start">
-          <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-roseSoft/50 flex items-center justify-center text-2xl">😔</div>
-          <div>
-            <h3 class="font-serif text-lg md:text-xl font-semibold text-dark mb-2">La flacidez facial está borrando los contornos naturales</h3>
-            <p class="text-dark/70 text-sm md:text-base">Haciendo que parezcas más cansada de lo que realmente estás, incluso después de una buena noche de sueño.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-2xl p-6 md:p-8 shadow-soft card-hover border-l-4 border-roseDeep" style="transition-delay: 0.1s;">
-        <div class="flex gap-4 md:gap-6 items-start">
-          <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-roseSoft/50 flex items-center justify-center text-2xl">😟</div>
-          <div>
-            <h3 class="font-serif text-lg md:text-xl font-semibold text-dark mb-2">La indeseada papada ha afectado tu autoestima</h3>
-            <p class="text-dark/70 text-sm md:text-base">En las fotografías y en el día a día, evitando ángulos y momentos que antes eran naturales.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-2xl p-6 md:p-8 shadow-soft card-hover border-l-4 border-roseDeep" style="transition-delay: 0.2s;">
-        <div class="flex gap-4 md:gap-6 items-start">
-          <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-roseSoft/50 flex items-center justify-center text-2xl">😰</div>
-          <div>
-            <h3 class="font-serif text-lg md:text-xl font-semibold text-dark mb-2">Las arrugas y líneas finas se están profundizando</h3>
-            <p class="text-dark/70 text-sm md:text-base">Temes el envejecimiento prematuro sin saber cómo detenerlo de forma natural y segura.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-2xl p-6 md:p-8 shadow-soft card-hover border-l-4 border-roseDeep" style="transition-delay: 0.3s;">
-        <div class="flex gap-4 md:gap-6 items-start">
-          <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-roseSoft/50 flex items-center justify-center text-2xl">⏳</div>
-          <div>
-            <h3 class="font-serif text-lg md:text-xl font-semibold text-dark mb-2">No tienes tiempo para rutinas complejas</h3>
-            <p class="text-dark/70 text-sm md:text-base">O tienes miedo de procedimientos estéticos invasivos y artificiales que prometen milagros.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="text-center mt-10 md:mt-14 animate-on-scroll">
-      <p class="text-base md:text-lg text-dark/80 mb-6">Si respondiste <span class="font-bold text-roseDeep">"sí"</span> a alguna de estas preguntas, sigue leyendo.</p>
-      <p class="font-serif text-xl md:text-2xl text-dark font-semibold">Existe un camino más gentil y eficaz. ✨</p>
-    </div>
-  </div>
-</section>
+    <script>
+        document.documentElement.classList.add('js');
 
-<!-- Interactive Quiz -->
-<section class="py-16 md:py-24 bg-cream">
-  <div class="max-w-4xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-10 md:mb-14 animate-on-scroll">
-      <div class="inline-flex items-center gap-2 bg-roseSoft/50 px-4 py-2 rounded-full mb-4">
-        <span class="text-sm">🎯</span>
-        <span class="text-xs md:text-sm font-semibold text-roseDeep">INTERACTIVO Y RÁPIDO</span>
-      </div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        Descubre el Foco de Tu Rostro
-      </h2>
-      <p class="text-dark/70 max-w-2xl mx-auto">Responde estas 3 preguntas simples para descubrir cuál es la técnica ideal para ti.</p>
-    </div>
-    
-    <div class="animate-on-scroll bg-white rounded-3xl shadow-soft p-6 md:p-10 border border-roseSoft/30">
-      <!-- Progress -->
-      <div class="mb-8">
-        <div class="flex justify-between text-xs text-dark/60 mb-2">
-          <span>Pregunta <span id="quizStep">1</span> de 3</span>
-          <span id="quizPercent">33%</span>
-        </div>
-        <div class="h-2 bg-roseSoft/30 rounded-full overflow-hidden">
-          <div id="quizProgress" class="progress-bar h-full bg-gradient-to-r from-roseDeep to-gold rounded-full" style="width: 33%"></div>
-        </div>
-      </div>
-      
-      <!-- Question 1 -->
-      <div id="quizQ1" class="quiz-step">
-        <h3 class="font-serif text-xl md:text-2xl font-semibold text-dark mb-6">1. ¿Cuál es la región del rostro que más te incomoda actualmente?</h3>
-        <div class="space-y-3">
-          <div class="quiz-option rounded-2xl p-4 md:p-5 bg-warm/50" data-value="bochechas" onclick="selectOption(1, this)">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-xl">👤</div>
-              <span class="text-sm md:text-base text-dark font-medium">Mejillas caídas / Pérdida de contorno de la mandíbula</span>
-            </div>
-          </div>
-          <div class="quiz-option rounded-2xl p-4 md:p-5 bg-warm/50" data-value="papada" onclick="selectOption(1, this)">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-xl">💧</div>
-              <span class="text-sm md:text-base text-dark font-medium">Acumulación de volumen bajo el mentón (papada)</span>
-            </div>
-          </div>
-          <div class="quiz-option rounded-2xl p-4 md:p-5 bg-warm/50" data-value="rugas" onclick="selectOption(1, this)">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-xl">✨</div>
-              <span class="text-sm md:text-base text-dark font-medium">Arrugas de expresión (bigote chino o patas de gallo)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Question 2 -->
-      <div id="quizQ2" class="quiz-step hidden">
-        <h3 class="font-serif text-xl md:text-2xl font-semibold text-dark mb-6">2. ¿Con qué frecuencia sientes tu rostro hinchado, especialmente por la mañana?</h3>
-        <div class="space-y-3">
-          <div class="quiz-option rounded-2xl p-4 md:p-5 bg-warm/50" data-value="siempre" onclick="selectOption(2, this)">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-xl">🌅</div>
-              <span class="text-sm md:text-base text-dark font-medium">Casi todas las mañanas siento retención de líquidos</span>
-            </div>
-          </div>
-          <div class="quiz-option rounded-2xl p-4 md:p-5 bg-warm/50" data-value="a veces" onclick="selectOption(2, this)">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-xl">🌙</div>
-              <span class="text-sm md:text-base text-dark font-medium">Solo ocasionalmente o cuando duermo pocas horas</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Question 3 -->
-      <div id="quizQ3" class="quiz-step hidden">
-        <h3 class="font-serif text-xl md:text-2xl font-semibold text-dark mb-6">3. ¿Cuánto tiempo puedes dedicar diariamente al autocuidado?</h3>
-        <div class="space-y-3">
-          <div class="quiz-option rounded-2xl p-4 md:p-5 bg-warm/50" data-value="poco" onclick="selectOption(3, this)">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-xl">⏱️</div>
-              <span class="text-sm md:text-base text-dark font-medium">Solo 5 a 10 minutos (buscando algo práctico)</span>
-            </div>
-          </div>
-          <div class="quiz-option rounded-2xl p-4 md:p-5 bg-warm/50" data-value="mucho" onclick="selectOption(3, this)">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-xl">🧘</div>
-              <span class="text-sm md:text-base text-dark font-medium">Puedo dedicar 15 minutos o más para una relajación completa</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Result -->
-      <div id="quizResult" class="quiz-step hidden">
-        <div class="text-center py-4">
-          <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-roseSoft to-gold/30 flex items-center justify-center">
-            <svg class="w-10 h-10 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-          </div>
-          <h3 class="font-serif text-2xl md:text-3xl font-bold text-dark mb-4">Diagnóstico V-Line Personalizado</h3>
-          <p class="text-dark/70 mb-6 max-w-2xl mx-auto leading-relaxed">
-            Tu perfil indica que la combinación de <strong class="text-roseDeep">Drenaje Linfático Coreano</strong> con ejercicios de <strong class="text-roseDeep">Tonificación Muscular</strong> traerá los resultados más rápidos y naturales. Nuestro e-book aborda exactamente el paso a paso de 10 minutos que se adapta a tu rutina diaria.
-          </p>
-          <a href="#oferta" class="btn-primary inline-flex items-center gap-2 text-white px-8 py-4 rounded-full font-semibold">
-            Ver Oferta Recomendada
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        const header = document.getElementById('siteHeader');
+        const progressBar = document.getElementById('progressBar');
+        const stickyCta = document.getElementById('stickyCta');
+        const hero = document.querySelector('.hero');
+        const pricing = document.getElementById('pricing');
 
-<!-- Method Section -->
-<section class="py-16 md:py-24 bg-white">
-  <div class="max-w-7xl mx-auto px-4 md:px-6">
-    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-      <div class="animate-on-scroll">
-        <div class="relative">
-          <div class="absolute -inset-4 bg-gradient-to-br from-gold/20 to-roseSoft/30 rounded-[2rem] blur-2xl"></div>
-          <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" 
-               alt="Masaje facial coreano" 
-               class="relative w-full rounded-3xl shadow-soft object-cover aspect-[4/3]">
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll">
-        <div class="inline-block text-xs md:text-sm font-semibold text-roseDeep tracking-widest mb-3">🌸 EL SECRETO DEL NATURAL FACE SCULPTING</div>
-        <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-6 leading-tight">
-          Así como ejercitamos nuestro cuerpo, el <span class="gradient-text">rostro también necesita</span> estímulo
-        </h2>
-        <p class="text-dark/70 mb-6 leading-relaxed">
-          Los más de <strong>40 músculos de nuestro rostro</strong> también necesitan estímulo constante. Cuando son negligenciados, la gravedad y el tiempo cobran su precio en forma de flacidez.
-        </p>
-        <p class="text-dark/70 mb-8 leading-relaxed">
-          Inspirado en la sabiduría milenaria asiática y en las rutinas de belleza de las mujeres coreanas, el e-book revela un paso a paso simple para activar la circulación, drenar las toxinas y fortalecer la musculatura facial con las propias manos.
-        </p>
-        
-        <div class="space-y-4">
-          <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-lg">💆‍♀️</div>
-            <div>
-              <h4 class="font-semibold text-dark mb-1">Técnicas de automasaje y drenaje linfático</h4>
-              <p class="text-sm text-dark/60">Movimientos precisos que deshinchan y definen</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-lg">💪</div>
-            <div>
-              <h4 class="font-semibold text-dark mb-1">Ejercicios enfocados en lifting facial natural</h4>
-              <p class="text-sm text-dark/60">Fortalecimiento muscular sin procedimientos invasivos</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center text-lg">🧖‍♀️</div>
-            <div>
-              <h4 class="font-semibold text-dark mb-1">Relajación de tensiones crónicas</h4>
-              <p class="text-sm text-dark/60">Que causan arrugas y marcas de expresión</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-<!-- Benefits Section -->
-<section class="py-16 md:py-24 bg-gradient-to-b from-warm to-cream">
-  <div class="max-w-7xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-12 md:mb-16 animate-on-scroll">
-      <div class="inline-block text-xs md:text-sm font-semibold text-roseDeep tracking-widest mb-3">✨ TRANSFORMACIÓN REAL</div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        Lo que <span class="gradient-text">10 minutos diarios</span> pueden hacer
-      </h2>
-      <p class="text-dark/70 max-w-2xl mx-auto">Descubre lo que solo 10 minutos de dedicación diaria pueden hacer por tu belleza natural.</p>
-    </div>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-roseSoft/20">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-roseSoft to-roseDeep/20 flex items-center justify-center mb-5 text-2xl">🌟</div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-2">Rostro Más Definido</h3>
-        <p class="text-dark/70 text-sm leading-relaxed">Esculpe los pómulos y la línea de la mandíbula, rescatando los contornos naturales y elegantes de tu juventud.</p>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-roseSoft/20" style="transition-delay: 0.1s;">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center mb-5 text-2xl">☀️</div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-2">Apariencia Iluminada</h3>
-        <p class="text-dark/70 text-sm leading-relaxed">El masaje estimula la oxigenación celular profunda, promoviendo un brillo saludable y una textura de piel radiante.</p>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-roseSoft/20" style="transition-delay: 0.2s;">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-roseSoft to-roseDeep/20 flex items-center justify-center mb-5 text-2xl">💗</div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-2">Mejora de la Circulación</h3>
-        <p class="text-dark/70 text-sm leading-relaxed">El drenaje linfático facial reduce drásticamente la hinchazón matutina y elimina toxinas indeseadas.</p>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-roseSoft/20" style="transition-delay: 0.1s;">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center mb-5 text-2xl">🎯</div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-2">Reducción de la Papada</h3>
-        <p class="text-dark/70 text-sm leading-relaxed">Ejercicios dirigidos para fortalecer la región del cuello, disminuyendo visiblemente la flacidez bajo el mentón.</p>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-roseSoft/20" style="transition-delay: 0.2s;">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-roseSoft to-roseDeep/20 flex items-center justify-center mb-5 text-2xl">⏰</div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-2">Solo 10 Minutos</h3>
-        <p class="text-dark/70 text-sm leading-relaxed">Una rutina altamente práctica que se adapta tanto a tu mañana agitada como a tu ritual de relajación nocturno.</p>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-roseSoft/20" style="transition-delay: 0.3s;">
-        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center mb-5 text-2xl">🌿</div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-2">100% Natural</h3>
-        <p class="text-dark/70 text-sm leading-relaxed">Consigue la mejor versión de tu propio rostro sin intervenciones químicas o agujas, preservando tu esencia.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        // Header + progress + sticky CTA
+        function handleScroll() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
 
-<!-- E-book Content -->
-<section class="py-16 md:py-24 bg-white">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-12 md:mb-16 animate-on-scroll">
-      <div class="inline-block text-xs md:text-sm font-semibold text-roseDeep tracking-widest mb-3">📚 CONTENIDO COMPLETO</div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        Lo Que Aprenderás en el E-book
-      </h2>
-      <div class="w-20 h-1 bg-gradient-to-r from-roseDeep to-gold mx-auto rounded-full"></div>
-    </div>
-    
-    <div class="grid md:grid-cols-2 gap-5 md:gap-6">
-      <div class="animate-on-scroll group relative bg-gradient-to-br from-warm to-cream rounded-3xl p-6 md:p-8 border border-roseSoft/30 card-hover overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-roseSoft/30 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-roseSoft/50 transition-all"></div>
-        <div class="relative">
-          <div class="font-serif text-5xl md:text-6xl font-bold gradient-text mb-3">01</div>
-          <h3 class="font-serif text-xl md:text-2xl font-bold text-dark mb-3">🔬 Fundamentos de la Estética Natural</h3>
-          <p class="text-dark/70 text-sm md:text-base leading-relaxed">Entiende la anatomía de tu rostro, comprende cómo los músculos pierden firmeza y aprende a preparar adecuadamente tu piel con aceites adecuados y una postura ideal.</p>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll group relative bg-gradient-to-br from-warm to-cream rounded-3xl p-6 md:p-8 border border-roseSoft/30 card-hover overflow-hidden" style="transition-delay: 0.1s;">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-gold/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-gold/30 transition-all"></div>
-        <div class="relative">
-          <div class="font-serif text-5xl md:text-6xl font-bold gradient-text mb-3">02</div>
-          <h3 class="font-serif text-xl md:text-2xl font-bold text-dark mb-3">💧 Protocolo de Drenaje Linfático Coreano</h3>
-          <p class="text-dark/70 text-sm md:text-base leading-relaxed">El paso a paso detallado para un efecto deshinchar inmediato. Conoce los puntos de presión linfática ideales para liberar las toxinas al inicio de tu día.</p>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll group relative bg-gradient-to-br from-warm to-cream rounded-3xl p-6 md:p-8 border border-roseSoft/30 card-hover overflow-hidden" style="transition-delay: 0.2s;">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-roseSoft/30 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-roseSoft/50 transition-all"></div>
-        <div class="relative">
-          <div class="font-serif text-5xl md:text-6xl font-bold gradient-text mb-3">03</div>
-          <h3 class="font-serif text-xl md:text-2xl font-bold text-dark mb-3">💎 Esculpir la Mandíbula y Reducir la Papada</h3>
-          <p class="text-dark/70 text-sm md:text-base leading-relaxed">Ejercicios aislados y dirigidos para la zona inferior del rostro, promoviendo la tonificación de la base del mentón y restableciendo el contorno de tu cuello.</p>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll group relative bg-gradient-to-br from-warm to-cream rounded-3xl p-6 md:p-8 border border-roseSoft/30 card-hover overflow-hidden" style="transition-delay: 0.3s;">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-gold/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-gold/30 transition-all"></div>
-        <div class="relative">
-          <div class="font-serif text-5xl md:text-6xl font-bold gradient-text mb-3">04</div>
-          <h3 class="font-serif text-xl md:text-2xl font-bold text-dark mb-3">👁️ Lifting Ocular y Suavización de Arrugas</h3>
-          <p class="text-dark/70 text-sm md:text-base leading-relaxed">Técnicas de activación muscular y estiramientos que ayudan a levantar la mirada, suavizando líneas de expresión finas alrededor de los ojos y la boca.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+            progressBar.style.width = `${Math.min(scrollPercent, 100)}%`;
+            header.classList.toggle('scrolled', scrollTop > 12);
 
-<!-- Comparison Section -->
-<section class="py-16 md:py-24 bg-warm">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-12 md:mb-16 animate-on-scroll">
-      <div class="inline-block text-xs md:text-sm font-semibold text-roseDeep tracking-widest mb-3">⚖️ ELECCIÓN CONSCIENTE</div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        ¿Por qué elegir el <span class="gradient-text">Camino Natural</span>?
-      </h2>
-    </div>
-    
-    <div class="grid md:grid-cols-2 gap-5 md:gap-8">
-      <!-- Convencional -->
-      <div class="animate-on-scroll bg-white/60 backdrop-blur rounded-3xl p-6 md:p-8 border-2 border-roseSoft/50">
-        <div class="flex items-center gap-3 mb-6">
-          <div class="w-12 h-12 rounded-full bg-roseSoft/50 flex items-center justify-center">
-            <svg class="w-6 h-6 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-          </div>
-          <h3 class="font-serif text-xl md:text-2xl font-bold text-dark">Procedimientos Convencionales</h3>
-        </div>
-        <ul class="space-y-4">
-          <li class="flex items-start gap-3">
-            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-roseSoft flex items-center justify-center mt-0.5">
-              <svg class="w-4 h-4 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/></svg>
-            </span>
-            <span class="text-dark/80">💸 Costos financieros extremadamente elevados</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-roseSoft flex items-center justify-center mt-0.5">
-              <svg class="w-4 h-4 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/></svg>
-            </span>
-            <span class="text-dark/80">🔄 Resultados provisionales con dependencia de mantenimiento</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-roseSoft flex items-center justify-center mt-0.5">
-              <svg class="w-4 h-4 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/></svg>
-            </span>
-            <span class="text-dark/80">⚠️ Riesgo de molestias post-procedimiento</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-roseSoft flex items-center justify-center mt-0.5">
-              <svg class="w-4 h-4 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"/></svg>
-            </span>
-            <span class="text-dark/80">🧪 Enfoques con componentes químicos o invasivos</span>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Método Natural -->
-      <div class="animate-on-scroll bg-gradient-to-br from-roseDeep to-roseDeep/90 rounded-3xl p-6 md:p-8 shadow-glow text-white relative overflow-hidden" style="transition-delay: 0.1s;">
-        <div class="absolute top-0 right-0 w-40 h-40 bg-gold/20 rounded-full blur-3xl"></div>
-        <div class="relative">
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            </div>
-            <h3 class="font-serif text-xl md:text-2xl font-bold">Nuestro Método V-Line</h3>
-          </div>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-              </span>
-              <span>💰 Inversión única, accesible y sin costos ocultos ($6)</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-              </span>
-              <span>📈 Evolución gradual basada en el estímulo de la memoria muscular</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-              </span>
-              <span>🌸 Valoración y respeto por tus rasgos únicos y naturales</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-              </span>
-              <span>🧘 Un momento diario dedicado a tu relajación y autocuidado</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+            const heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 700;
+            const pricingRect = pricing ? pricing.getBoundingClientRect() : null;
+            const pricingInView = pricingRect && pricingRect.top < window.innerHeight && pricingRect.bottom > 0;
 
-<!-- Bonuses Section -->
-<section class="py-16 md:py-24 bg-cream">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-12 md:mb-16 animate-on-scroll">
-      <div class="inline-flex items-center gap-2 bg-gold/20 px-4 py-2 rounded-full mb-4">
-        <span class="text-sm">🎁</span>
-        <span class="text-xs md:text-sm font-semibold text-gold">OFRECIDO CON TU COMPRA</span>
-      </div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        Adquiere Hoy y Recibe <span class="gradient-text">3 Bonos Exclusivos</span>
-      </h2>
-      <p class="text-dark/70 max-w-2xl mx-auto">Desarrollamos estas guías complementarias para optimizar tus resultados.</p>
-    </div>
-    
-    <div class="grid md:grid-cols-3 gap-5 md:gap-6">
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-gold/30 relative overflow-hidden">
-        <div class="absolute top-4 right-4 bg-gradient-to-br from-gold to-goldLight text-white text-xs font-bold px-3 py-1.5 rounded-full">GRATIS</div>
-        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center mb-5">
-          <span class="font-serif text-2xl font-bold text-gold">01</span>
-        </div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-3">📅 Plan Facial de 21 Días</h3>
-        <p class="text-dark/70 text-sm mb-5 leading-relaxed">Una planificación paso a paso detallando qué practicar en cada día de las primeras 3 semanas para consolidar tu rutina con facilidad.</p>
-        <div class="pt-4 border-t border-roseSoft/30">
-          <div class="text-xs text-dark/50 mb-1">Valor individual</div>
-          <div class="flex items-baseline gap-2">
-            <span class="text-dark/50 line-through text-sm">$8.00</span>
-            <span class="text-gold font-bold">GRATIS</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-gold/30 relative overflow-hidden" style="transition-delay: 0.1s;">
-        <div class="absolute top-4 right-4 bg-gradient-to-br from-gold to-goldLight text-white text-xs font-bold px-3 py-1.5 rounded-full">GRATIS</div>
-        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center mb-5">
-          <span class="font-serif text-2xl font-bold text-gold">02</span>
-        </div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-3">✅ Checklist Diario</h3>
-        <p class="text-dark/70 text-sm mb-5 leading-relaxed">Una guía visual y simple creada para acompañar y monitorear tus ejercicios diarios, manteniendo tu enfoque y progreso constantes.</p>
-        <div class="pt-4 border-t border-roseSoft/30">
-          <div class="text-xs text-dark/50 mb-1">Valor individual</div>
-          <div class="flex items-baseline gap-2">
-            <span class="text-dark/50 line-through text-sm">$4.00</span>
-            <span class="text-gold font-bold">GRATIS</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-8 shadow-soft card-hover border border-gold/30 relative overflow-hidden" style="transition-delay: 0.2s;">
-        <div class="absolute top-4 right-4 bg-gradient-to-br from-gold to-goldLight text-white text-xs font-bold px-3 py-1.5 rounded-full">GRATIS</div>
-        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center mb-5">
-          <span class="font-serif text-2xl font-bold text-gold">03</span>
-        </div>
-        <h3 class="font-serif text-xl font-bold text-dark mb-3">🛠️ Guía de Herramientas</h3>
-        <p class="text-dark/70 text-sm mb-5 leading-relaxed">Aprende a utilizar de forma optimizada utensilios simples como el Gua Sha o rodillos faciales de masaje para enriquecer tu momento de cuidados.</p>
-        <div class="pt-4 border-t border-roseSoft/30">
-          <div class="text-xs text-dark/50 mb-1">Valor individual</div>
-          <div class="flex items-baseline gap-2">
-            <span class="text-dark/50 line-through text-sm">$11.00</span>
-            <span class="text-gold font-bold">GRATIS</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+            stickyCta.classList.toggle('visible', scrollTop > heroBottom * 0.65 && !pricingInView);
+        }
 
-<!-- Offer Section -->
-<section id="oferta" class="py-16 md:py-24 bg-gradient-to-br from-dark via-dark to-roseDeep/30 relative overflow-hidden">
-  <div class="absolute inset-0 opacity-20">
-    <div class="absolute top-10 left-10 w-64 h-64 bg-roseDeep rounded-full blur-3xl"></div>
-    <div class="absolute bottom-10 right-10 w-80 h-80 bg-gold rounded-full blur-3xl"></div>
-  </div>
-  
-  <div class="max-w-4xl mx-auto px-4 md:px-6 relative">
-    <div class="text-center mb-10 animate-on-scroll">
-      <div class="inline-flex items-center gap-2 bg-roseDeep/20 backdrop-blur border border-roseDeep/30 px-4 py-2 rounded-full mb-4">
-        <span class="w-2 h-2 bg-roseDeep rounded-full animate-pulse"></span>
-        <span class="text-xs md:text-sm font-semibold text-white">⏰ OPORTUNIDAD POR TIEMPO LIMITADO</span>
-      </div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-white mb-4">
-        Contenido incluido en tu acceso
-      </h2>
-    </div>
-    
-    <div class="animate-on-scroll bg-white rounded-3xl p-6 md:p-10 shadow-2xl">
-      <div class="space-y-4 mb-8">
-        <div class="flex items-center justify-between py-4 border-b border-roseSoft/30">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-roseSoft flex items-center justify-center">
-              <svg class="w-5 h-5 text-roseDeep" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            </div>
-            <span class="font-semibold text-dark">📖 E-book Principal: El Arte de Esculpir el Rostro</span>
-          </div>
-          <span class="text-dark/50 line-through hidden md:inline">$15.00</span>
-        </div>
-        <div class="flex items-center justify-between py-4 border-b border-roseSoft/30">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
-              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            </div>
-            <span class="font-semibold text-dark">📅 Bono 1: Plan Facial de 21 Días</span>
-          </div>
-          <span class="text-dark/50 line-through hidden md:inline">$8.00</span>
-        </div>
-        <div class="flex items-center justify-between py-4 border-b border-roseSoft/30">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
-              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            </div>
-            <span class="font-semibold text-dark">✅ Bono 2: Checklist Diario de Ejercicios</span>
-          </div>
-          <span class="text-dark/50 line-through hidden md:inline">$4.00</span>
-        </div>
-        <div class="flex items-center justify-between py-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
-              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            </div>
-            <span class="font-semibold text-dark">🛠️ Bono 3: Guía de Herramientas Tradicionales</span>
-          </div>
-          <span class="text-dark/50 line-through hidden md:inline">$11.00</span>
-        </div>
-      </div>
-      
-      <div class="divider-gold my-6"></div>
-      
-      <div class="text-center">
-        <div class="text-sm text-dark/60 mb-2">Valor acumulado: <span class="line-through">$29.00</span></div>
-        <div class="text-sm text-dark/60 mb-4">Acceso inmediato hoy por solo:</div>
-        
-        <div class="inline-block bg-gradient-to-br from-roseSoft/30 to-gold/10 rounded-3xl p-6 md:p-8 mb-6">
-          <div class="text-sm text-dark/60 mb-1">Pago único • Sin tasas adicionales</div>
-          <div class="flex items-baseline justify-center gap-2 mb-2">
-            <span class="text-2xl text-dark/60">$</span>
-            <span class="font-serif text-6xl md:text-7xl font-bold gradient-text">6</span>
-            <span class="text-2xl text-dark/60">.00</span>
-          </div>
-          <div class="text-xs text-dark/60">Acceso permanente • Compra segura Kiwify</div>
-        </div>
-        
-        <!-- Countdown -->
-        <div class="mb-6">
-          <div class="text-xs text-dark/60 mb-3">Esta oferta especial expira en:</div>
-          <div class="flex justify-center gap-2 md:gap-3">
-            <div class="countdown-box rounded-xl p-3 md:p-4 min-w-[70px] md:min-w-[80px]">
-              <div id="hours" class="font-serif text-2xl md:text-3xl font-bold text-white">12</div>
-              <div class="text-xs text-white/60 mt-1">Horas</div>
-            </div>
-            <div class="countdown-box rounded-xl p-3 md:p-4 min-w-[70px] md:min-w-[80px]">
-              <div id="minutes" class="font-serif text-2xl md:text-3xl font-bold text-white">00</div>
-              <div class="text-xs text-white/60 mt-1">Min</div>
-            </div>
-            <div class="countdown-box rounded-xl p-3 md:p-4 min-w-[70px] md:min-w-[80px]">
-              <div id="seconds" class="font-serif text-2xl md:text-3xl font-bold text-white">00</div>
-              <div class="text-xs text-white/60 mt-1">Seg</div>
-            </div>
-          </div>
-        </div>
-        
-        <a href="https://pay.kiwify.com/N0tXgSM" class="btn-primary pulse-btn inline-flex items-center gap-3 text-white px-8 md:px-12 py-4 md:py-5 rounded-full font-bold text-base md:text-lg mb-4 w-full md:w-auto justify-center">
-          Adquirir Ahora por $6.00
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
-        
-        <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-xs text-dark/60 mt-4">
-          <div class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            <span>Transacción Segura</span>
-          </div>
-          <div class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Garantía 7 Días</span>
-          </div>
-          <div class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            <span>Acceso Inmediato</span>
-          </div>
-        </div>
-        
-        <div class="mt-6 flex justify-center">
-          <img src="https://logospng.org/download/kiwify/logo-kiwify-1024.png" alt="Kiwify" class="h-8 opacity-60">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
 
-<!-- Guarantee Section -->
-<section class="py-16 md:py-24 bg-cream">
-  <div class="max-w-4xl mx-auto px-4 md:px-6">
-    <div class="animate-on-scroll bg-white rounded-3xl p-8 md:p-12 shadow-soft border-2 border-gold/30 relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-40 h-40 bg-gold/10 rounded-full blur-3xl"></div>
-      <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <div class="flex-shrink-0">
-          <div class="w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-gold to-goldLight flex items-center justify-center shadow-glow">
-            <div class="text-center text-white">
-              <div class="font-serif text-3xl md:text-4xl font-bold">7</div>
-              <div class="text-xs md:text-sm font-semibold">DÍAS</div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center md:text-left">
-          <div class="inline-block text-xs md:text-sm font-semibold text-gold tracking-widest mb-2">🛡️ GARANTÍA INCONDICIONAL</div>
-          <h3 class="font-serif text-2xl md:text-3xl font-bold text-dark mb-4">Riesgo Cero para Ti</h3>
-          <p class="text-dark/70 leading-relaxed">
-            Tu riesgo en esta adquisición es absolutamente nulo. Disfrutas de una garantía completa de 7 días para analizar el material y experimentar los ejercicios propuestos. Si concluyes que la metodología no se adapta a tus necesidades, el reembolso del valor total invertido será efectuado a través de la plataforma Kiwify, sin ninguna complicación.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        // Reveal on scroll
+        const revealElements = document.querySelectorAll('.reveal');
 
-<!-- Testimonials -->
-<section class="py-16 md:py-24 bg-warm">
-  <div class="max-w-7xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-12 md:mb-16 animate-on-scroll">
-      <div class="inline-block text-xs md:text-sm font-semibold text-roseDeep tracking-widest mb-3">💬 HISTORIAS REALES</div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        Lo que nuestras alumnas dicen
-      </h2>
-      <p class="text-dark/70 max-w-2xl mx-auto">Relatos reales de mujeres que transformaron su rutina de autocuidado con el método V-Line.</p>
-    </div>
-    
-    <div class="grid md:grid-cols-3 gap-5 md:gap-6">
-      <div class="animate-on-scroll testimonial-card bg-white rounded-3xl p-6 md:p-8 shadow-soft">
-        <div class="flex items-center gap-1 mb-3">
-          <span class="text-gold text-lg">★★★★★</span>
-        </div>
-        <p class="text-dark/80 mb-6 leading-relaxed italic">"En 3 semanas mi papada se redujo visiblemente. El método es simple, práctico y realmente funciona. ¡Nunca pensé que 10 minutos al día harían tanta diferencia!"</p>
-        <div class="flex items-center gap-3 pt-4 border-t border-roseSoft/30">
-          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-roseSoft to-roseDeep/30 flex items-center justify-center font-serif font-bold text-roseDeep text-lg">M</div>
-          <div>
-            <div class="font-semibold text-dark">Mariana S.</div>
-            <div class="text-xs text-dark/60">São Paulo</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll testimonial-card bg-white rounded-3xl p-6 md:p-8 shadow-soft" style="transition-delay: 0.1s;">
-        <div class="flex items-center gap-1 mb-3">
-          <span class="text-gold text-lg">★★★★★</span>
-        </div>
-        <p class="text-dark/80 mb-6 leading-relaxed italic">"El drenaje linfático del e-book cambió mi mañana. Despierto sin el rostro hinchado y mi piel está más luminosa. ¡La mejor inversión que hice este año!"</p>
-        <div class="flex items-center gap-3 pt-4 border-t border-roseSoft/30">
-          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold/30 to-gold/10 flex items-center justify-center font-serif font-bold text-gold text-lg">C</div>
-          <div>
-            <div class="font-semibold text-dark">Carolina M.</div>
-            <div class="text-xs text-dark/60">Río de Janeiro</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll testimonial-card bg-white rounded-3xl p-6 md:p-8 shadow-soft" style="transition-delay: 0.2s;">
-        <div class="flex items-center gap-1 mb-3">
-          <span class="text-gold text-lg">★★★★★</span>
-        </div>
-        <p class="text-dark/80 mb-6 leading-relaxed italic">"Tengo 58 años y estaba escéptica, pero los resultados aparecieron. Mi mandíbula está más definida y las arrugas alrededor de los ojos se suavizaron. ¡Lo recomiendo con los ojos cerrados!"</p>
-        <div class="flex items-center gap-3 pt-4 border-t border-roseSoft/30">
-          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-roseSoft to-roseDeep/30 flex items-center justify-center font-serif font-bold text-roseDeep text-lg">F</div>
-          <div>
-            <div class="font-semibold text-dark">Fernanda L.</div>
-            <div class="text-xs text-dark/60">Belo Horizonte</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
 
-<!-- FAQ Section -->
-<section class="py-16 md:py-24 bg-white">
-  <div class="max-w-3xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-12 md:mb-16 animate-on-scroll">
-      <div class="inline-block text-xs md:text-sm font-semibold text-roseDeep tracking-widest mb-3">❓ PREGUNTAS FRECUENTES</div>
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-        Preguntas Frecuentes
-      </h2>
-    </div>
-    
-    <div class="space-y-3 md:space-y-4">
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿El método funciona para mujeres mayores de 50 o 60 años?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            Por supuesto. La musculatura facial responde positivamente al estímulo físico adecuado en cualquier etapa de la vida. En pieles maduras, se recomienda solo un cuidado adicional en el uso de aceites adecuados para el correcto deslizamiento de las manos, garantizando total seguridad durante los masajes.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.05s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿En cuánto tiempo empezaré a ver los resultados?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            La atenuación de la retención de líquidos y el aspecto descansado son frecuentemente observados en las primeras sesiones de drenaje. La mejora en el aspecto a nivel de tonificación muscular facial (reducción visible de papada y firmeza) se manifiesta típicamente entre 15 a 21 días de práctica diaria consistente.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.1s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿Necesito comprar cremas caras para hacer los masajes?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            De ninguna manera. El enfoque principal reside en la mecánica del movimiento correcto y el deslizamiento seguro. Puedes utilizar tu crema de hidratación habitual, aceite de almendras dulces, aceite de rosa mosqueta o cualquier producto adecuado a tu tipo de piel. El e-book proporciona sugerencias prácticas y económicas sobre esta elección.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.15s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿El método es seguro? ¿Puede causar más arrugas?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            La técnica se basa en la correcta manipulación de los músculos. Al seguir las directrices exactas presentadas en la guía, los movimientos siempre se realizan de abajo hacia arriba y de adentro hacia afuera, respetando el sentido de las fibras musculares. Esto asegura que la práctica promueva la firmeza y no estimule arrugas adicionales.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.2s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿Cómo voy a recibir mi e-book y los bonos?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            Inmediatamente después de la aprobación de la transacción financiera, recibirás un mensaje de correo electrónico (e-mail) remitido por Kiwify, conteniendo tus credenciales seguras para descargar el e-book principal y todos los bonos asociados en formato digital.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.25s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿Y si no tengo tiempo para practicar todos los días?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            La rutina fue específicamente simplificada para poder ser incorporada en agendas exigentes. Bastan entre 5 a 10 minutos diarios, que pueden ser integrados en la ducha o en la aplicación de tu crema habitual al acostarte. La regularidad diaria asume mayor relevancia que la duración de la práctica.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.3s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿Tendré acceso al material por cuánto tiempo?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            Tu acceso al material es permanente y de por vida. Después de descargar los manuales informativos en PDF, los mismos te pertenecerán de forma definitiva, permitiendo futuras consultas en cualquier momento.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.35s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿Puedo leer el material por el celular?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            Sí. Todo el material está editado en archivos optimizados PDF. Este formato se adapta fácilmente y sin pérdida de resolución a pantallas de teléfono móvil, tablet, computadora portátil o desktop.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.4s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">¿Cuáles son las formas de pago aceptadas?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            El procesador seguro Kiwify acepta transacciones utilizando PIX (aprobación en tiempo real), Tarjeta de Crédito y Boleto Bancario convencional.
-          </div>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll faq-item bg-warm/50 rounded-2xl border border-roseSoft/30 overflow-hidden" style="transition-delay: 0.45s;">
-        <button class="w-full text-left p-5 md:p-6 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-dark text-sm md:text-base">Si no me gusta, ¿cómo pido el reembolso?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full bg-roseSoft flex items-center justify-center text-roseDeep font-bold">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="px-5 md:px-6 pb-5 md:pb-6 text-dark/70 text-sm md:text-base leading-relaxed">
-            Dentro del período legal de garantía de 7 días, puedes acceder directamente a tu área de compras en la plataforma de gestión de pagos Kiwify e iniciar el proceso de devolución automática con reintegración total de la cantidad desembolsada.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+            revealElements.forEach((el) => revealObserver.observe(el));
+        } else {
+            revealElements.forEach((el) => el.classList.add('visible'));
+        }
 
-<!-- Final CTA -->
-<section class="py-16 md:py-24 bg-gradient-to-br from-roseSoft via-cream to-gold/20 relative overflow-hidden">
-  <div class="absolute top-0 left-0 w-64 h-64 bg-roseDeep/10 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 w-80 h-80 bg-gold/10 rounded-full blur-3xl"></div>
-  
-  <div class="max-w-4xl mx-auto px-4 md:px-6 text-center relative">
-    <div class="animate-on-scroll">
-      <h2 class="section-title font-serif text-3xl md:text-5xl font-bold text-dark mb-6 leading-tight">
-        Falta solo <span class="gradient-text">un clic</span> para redefinir la firmeza de tu rostro
-      </h2>
-      <p class="text-dark/70 text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-        Evita que el tiempo determine de forma exclusiva el aspecto de tu rostro. El método para atenuar las marcas de fatiga está accesible en la punta de tus dedos.
-      </p>
-      
-      <a href="https://pay.kiwify.com.br/HkT0bOZ" class="btn-primary pulse-btn inline-flex items-center gap-3 text-white px-10 md:px-14 py-5 md:py-6 rounded-full font-bold text-base md:text-lg mb-6">
-        Quiero el Método Natural V-Line
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-      </a>
-      
-      <div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-dark/70">
-        <span class="flex items-center gap-1.5">
-          <span>💰</span> Solo $6.00
-        </span>
-        <span class="flex items-center gap-1.5">
-          <span>⚡</span> Acceso Seguro Inmediato
-        </span>
-        <span class="flex items-center gap-1.5">
-          <span>🛡️</span> Riesgo Nulo
-        </span>
-      </div>
-    </div>
-  </div>
-</section>
+        // Tabs
+        document.querySelectorAll('[data-tabs]').forEach((tabGroup) => {
+            const buttons = tabGroup.querySelectorAll('[data-tab-button]');
+            const root = tabGroup.closest('section, .preview-card') || document;
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-12 md:py-16">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <div class="text-center mb-8">
-      <div class="font-serif text-3xl md:text-4xl font-bold gradient-text mb-3">ELIAVE</div>
-      <p class="text-white/60 text-sm max-w-2xl mx-auto">
-        Este manual se destina a fines puramente estéticos y de bienestar. No constituye asesoramiento clínico o médico. Consulta a tu profesional de salud para abordajes clínicos o dermatológicos específicos.
-      </p>
-    </div>
-    
-    <div class="divider-gold my-8 opacity-30"></div>
-    
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
-      <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
-        <button onclick="openModal('terms')" class="hover:text-white transition">Términos de Uso</button>
-        <button onclick="openModal('privacy')" class="hover:text-white transition">Políticas de Privacidad</button>
-      </div>
-      <div>© Eliave - Método V-Line Korea, con derechos reservados.</div>
-    </div>
-  </div>
-</footer>
+            buttons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const target = button.getAttribute('data-tab-button');
 
-<!-- Modals -->
-<div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-  <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 md:p-10 relative">
-    <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-warm flex items-center justify-center hover:bg-roseSoft transition">
-      <svg class="w-5 h-5 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
-    <div id="modalContent"></div>
-  </div>
-</div>
+                    buttons.forEach((btn) => {
+                        const isActive = btn === button;
+                        btn.classList.toggle('active', isActive);
+                        btn.setAttribute('aria-selected', isActive);
+                        btn.tabIndex = isActive ? 0 : -1;
+                    });
 
-<script>
-const quizAnswers = {};
-let currentStep = 1;
+                    root.querySelectorAll('[data-tab-panel]').forEach((panel) => {
+                        panel.classList.toggle('active', panel.getAttribute('data-tab-panel') === target);
+                    });
+                });
+            });
+        });
 
-function selectOption(step, element) {
-  const options = element.parentElement.querySelectorAll('.quiz-option');
-  options.forEach(opt => opt.classList.remove('selected'));
-  element.classList.add('selected');
-  quizAnswers[step] = element.dataset.value;
-  
-  setTimeout(() => {
-    if (step < 3) {
-      document.getElementById(`quizQ${step}`).classList.add('hidden');
-      document.getElementById(`quizQ${step + 1}`).classList.remove('hidden');
-      currentStep = step + 1;
-      updateProgress();
-    } else {
-      document.getElementById(`quizQ3`).classList.add('hidden');
-      document.getElementById('quizResult').classList.remove('hidden');
-      document.getElementById('quizStep').textContent = '3';
-      document.getElementById('quizPercent').textContent = '100%';
-      document.getElementById('quizProgress').style.width = '100%';
-    }
-  }, 400);
-}
+        // Calculator
+        const drinksRange = document.getElementById('drinksRange');
+        const priceRange = document.getElementById('priceRange');
+        const homeRange = document.getElementById('homeRange');
 
-function updateProgress() {
-  const percent = Math.round((currentStep / 3) * 100);
-  document.getElementById('quizStep').textContent = currentStep;
-  document.getElementById('quizPercent').textContent = percent + '%';
-  document.getElementById('quizProgress').style.width = percent + '%';
-}
+        const drinksValue = document.getElementById('drinksValue');
+        const priceValue = document.getElementById('priceValue');
+        const homeValue = document.getElementById('homeValue');
 
-function toggleFaq(button) {
-  const item = button.parentElement;
-  const wasActive = item.classList.contains('active');
-  
-  document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('active'));
-  
-  if (!wasActive) {
-    item.classList.add('active');
-  }
-}
+        const cafeWeekly = document.getElementById('cafeWeekly');
+        const homeWeekly = document.getElementById('homeWeekly');
+        const monthlySavings = document.getElementById('monthlySavings');
+        const yearlySavings = document.getElementById('yearlySavings');
+        const bundleEquivalent = document.getElementById('bundleEquivalent');
 
-function startCountdown() {
-  const now = new Date();
-  const end = new Date(now.getTime() + 12 * 60 * 60 * 1000);
-  
-  function update() {
-    const now = new Date();
-    const diff = end - now;
-    
-    if (diff <= 0) {
-      document.getElementById('hours').textContent = '00';
-      document.getElementById('minutes').textContent = '00';
-      document.getElementById('seconds').textContent = '00';
-      return;
-    }
-    
-    const h = Math.floor(diff / (1000 * 60 * 60));
-    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const s = Math.floor((diff % (1000 * 60)) / 1000);
-    
-    document.getElementById('hours').textContent = h.toString().padStart(2, '0');
-    document.getElementById('minutes').textContent = m.toString().padStart(2, '0');
-    document.getElementById('seconds').textContent = s.toString().padStart(2, '0');
-  }
-  
-  update();
-  setInterval(update, 1000);
-}
+        const currency = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD'
+        });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        function updateCalculator() {
+            const drinks = Number(drinksRange.value);
+            const cafePrice = Number(priceRange.value);
+            const homeCost = Number(homeRange.value);
 
-document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+            const weeklyCafe = drinks * cafePrice;
+            const weeklyHome = drinks * homeCost;
+            const weeklySavings = Math.max(0, weeklyCafe - weeklyHome);
+            const monthSavings = weeklySavings * 4.33;
+            const yearSavings = weeklySavings * 52;
+            const bundleDrinks = cafePrice > 0 ? 14.99 / cafePrice : 0;
 
-let lastScroll = 0;
-window.addEventListener('scroll', () => {
-  const stickyBar = document.getElementById('stickyBar');
-  const scrollY = window.scrollY;
-  
-  if (scrollY > 800) {
-    stickyBar.classList.add('visible');
-  } else {
-    stickyBar.classList.remove('visible');
-  }
-  lastScroll = scrollY;
-});
+            drinksValue.textContent = drinks;
+            priceValue.textContent = currency.format(cafePrice);
+            homeValue.textContent = currency.format(homeCost);
 
-const modalContent = {
-  terms: `
-    <h2 class="font-serif text-2xl md:text-3xl font-bold text-dark mb-6">Términos de Uso</h2>
-    <div class="space-y-4 text-dark/80 text-sm md:text-base leading-relaxed">
-      <p>Bienvenido a los Términos de Uso de "Eliave - Método V-Line Korea". Al adquirir nuestro e-book y bonos, aceptas legalmente las condiciones a continuación:</p>
-      <h3 class="font-semibold text-dark mt-4">1. Propiedad Intelectual y Derechos de Autor</h3>
-      <p>Todo el contenido de este producto (textos, imágenes, diseño, logotipos y metodologías) es propiedad exclusiva de Eliave. Está terminantemente prohibida la copia, reproducción, distribución, reventa o compartimiento (gratuito o pago) de este material sin autorización previa por escrito. La piratería es un delito.</p>
-      <h3 class="font-semibold text-dark mt-4">2. Uso Personal</h3>
-      <p>La licencia adquirida es individual e intransferible, destinada solo para uso personal de la compradora.</p>
-      <h3 class="font-semibold text-dark mt-4">3. Exención de Responsabilidad de Salud</h3>
-      <p>El Método V-Line Korea tiene carácter estético e informativo, enfocado en prácticas naturales de automasaje. No sustituye asesoramiento, diagnóstico o tratamiento médico profesional. En caso de condiciones de piel preexistentes, cirugías faciales recientes o dolores crónicos, consulta a tu médico antes de iniciar los ejercicios.</p>
-      <h3 class="font-semibold text-dark mt-4">4. Resultados</h3>
-      <p>Los resultados promovidos por la práctica de yoga y masaje facial pueden variar de persona a persona, dependiendo de factores genéticos, consistencia en la práctica, alimentación y edad. No garantizamos resultados específicos o idénticos para todos los usuarios.</p>
-      <h3 class="font-semibold text-dark mt-4">5. Política de Reembolso</h3>
-      <p>Ofrecemos una garantía de satisfacción incondicional de 7 (siete) días a partir de la fecha de compra, garantizada por la plataforma Kiwify. Durante este período, la cancelación puede ser solicitada directamente por la plataforma o vía soporte, con devolución integral del valor pagado. Después de los 7 días, ningún reembolso será emitido.</p>
-    </div>
-  `,
-  privacy: `
-    <h2 class="font-serif text-2xl md:text-3xl font-bold text-dark mb-6">Políticas de Privacidad</h2>
-    <div class="space-y-4 text-dark/80 text-sm md:text-base leading-relaxed">
-      <p>La privacidad de nuestras clientas es de extrema importancia para Eliave. Esta política describe cómo tu información personal es recopilada, usada y protegida.</p>
-      <h3 class="font-semibold text-dark mt-4">1. Recopilación de Información</h3>
-      <p>La información personal (como nombre, e-mail, CPF y datos de pago) es recopilada exclusivamente a través de la plataforma de pagos Kiwify en el momento de la compra. Eliave no almacena datos de tarjeta de crédito en sus servidores.</p>
-      <h3 class="font-semibold text-dark mt-4">2. Uso de la Información</h3>
-      <p>Tus datos son utilizados para procesar tu compra, liberar el acceso al producto digital y enviar comunicaciones estrictamente relacionadas al "Método V-Line Korea" (como actualizaciones del material, avisos de soporte u ofertas exclusivas de nuestra marca).</p>
-      <h3 class="font-semibold text-dark mt-4">3. Compartimiento de Datos (LGPD)</h3>
-      <p>No vendemos, alquilamos ni compartimos tu información personal con terceros bajo ninguna circunstancia. Nos comprometemos con el cumplimiento de la Ley General de Protección de Datos (LGPD).</p>
-      <h3 class="font-semibold text-dark mt-4">4. Cookies y Tecnologías de Rastreo</h3>
-      <p>Esta página puede utilizar cookies básicos (como el Pixel de Facebook/Meta o Google Analytics) con el único objetivo de entender el comportamiento de navegación en nuestra página de ventas y optimizar nuestras campañas de publicidad.</p>
-      <h3 class="font-semibold text-dark mt-4">5. Seguridad</h3>
-      <p>Tomamos todas las precauciones razonables y seguimos las mejores prácticas de la industria para asegurarnos de que tu información no sea perdida, usurpada, accedida, divulgada, alterada o destruida de forma inadecuada.</p>
-    </div>
-  `
-};
+            cafeWeekly.textContent = currency.format(weeklyCafe);
+            homeWeekly.textContent = currency.format(weeklyHome);
+            monthlySavings.textContent = currency.format(monthSavings);
+            yearlySavings.textContent = currency.format(yearSavings);
+            bundleEquivalent.textContent = `The $14.99 bundle equals about ${bundleDrinks.toFixed(1)} café drinks`;
+        }
 
-function openModal(type) {
-  document.getElementById('modalContent').innerHTML = modalContent[type];
-  document.getElementById('modal').classList.remove('hidden');
-  document.getElementById('modal').classList.add('flex');
-  document.body.style.overflow = 'hidden';
-}
+        if (drinksRange && priceRange && homeRange) {
+            [drinksRange, priceRange, homeRange].forEach((input) => {
+                input.addEventListener('input', updateCalculator);
+            });
+            updateCalculator();
+        }
 
-function closeModal() {
-  document.getElementById('modal').classList.add('hidden');
-  document.getElementById('modal').classList.remove('flex');
-  document.body.style.overflow = '';
-}
+        // Smooth scroll with header offset
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+            link.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (!targetId || targetId === '#') return;
 
-document.getElementById('modal').addEventListener('click', (e) => {
-  if (e.target === document.getElementById('modal')) closeModal();
-});
+                const target = document.querySelector(targetId);
+                if (!target) return;
 
-startCountdown();
-</script>
+                e.preventDefault();
 
+                const headerHeight = header.offsetHeight;
+                const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - 18;
+
+                window.scrollTo({
+                    top,
+                    behavior: prefersReducedMotion ? 'auto' : 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
